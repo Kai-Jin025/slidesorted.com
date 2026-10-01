@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Replace https://slidesorted.com/ with your real domain before submitting
-  to Google Search Console. All URLs must sit on the same host as the
-  canonical tags in each page's <head>.
+  Every <loc> must match the canonical tag in that page's <head> exactly, character
+  for character, and carry no trailing slash — Cloudflare Pages redirects the
+  trailing-slash form away, so a sitemap listing it would point at a redirect.
+  check-site.py fails if sitemap.xml and the canonicals ever disagree.
+
+  404.html is deliberately absent. It is noindex and only ever served alongside a
+  404 status.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
