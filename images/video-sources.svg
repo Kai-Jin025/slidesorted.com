@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 322" width="720" height="322" role="img">
+  <title>Three ways to add video to PowerPoint: from your device, from stock, or as an online link</title>
+  <defs>
+    <style>
+      .t    { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .cap  { font-size: 10px; fill: #9a9a92; letter-spacing: 0.10em; }
+      .hd   { font-size: 14px; font-weight: 700; fill: #1a1a1a; }
+      .sub  { font-size: 11px; fill: #8a8a82; }
+      .row  { font-size: 12px; fill: #3a3a36; }
+      .yes  { font-size: 12px; fill: #2f6f4a; }
+      .no   { font-size: 12px; fill: #a8431f; }
+    </style>
+  </defs>
+
+  <rect width="720" height="322" fill="#ffffff"/>
+  <text class="t cap" x="360" y="28" text-anchor="middle">INSERT → VIDEO</text>
+  <text class="t sub" x="360" y="48" text-anchor="middle" font-size="12">Pick the source before anything else — it decides whether the video survives the venue's wifi.</text>
+
+  <!-- column 1 -->
+  <rect x="24" y="66" width="216" height="232" rx="10" fill="#ffffff" stroke="#e3e3df" stroke-width="1.5"/>
+  <rect x="24" y="66" width="216" height="38" rx="10" fill="#fdf0ec"/>
+  <rect x="24" y="94" width="216" height="10" fill="#fdf0ec"/>
+  <text class="t hd" x="132" y="91" text-anchor="middle" fill="#c43e1c">This Device</text>
+
+  <text class="t row" x="44" y="128" font-weight="600">A file on your computer</text>
+  <text class="t sub" x="44" y="149">Stored inside the .pptx itself.</text>
+
+  <text class="t yes" x="44" y="182">✓  Plays with no internet</text>
+  <text class="t yes" x="44" y="204">✓  Opens on any machine</text>
+  <text class="t no"  x="44" y="226">✗  File size grows fast</text>
+
+  <rect x="44" y="248" width="176" height="30" rx="6" fill="#f5f5f2"/>
+  <text class="t sub" x="132" y="267" text-anchor="middle" fill="#5c5c5c">Safest choice on stage</text>
+
+  <!-- column 2 -->
+  <rect x="252" y="66" width="216" height="232" rx="10" fill="#ffffff" stroke="#e3e3df" stroke-width="1.5"/>
+  <rect x="252" y="66" width="216" height="38" rx="10" fill="#f4f4f1"/>
+  <rect x="252" y="94" width="216" height="10" fill="#f4f4f1"/>
+  <text class="t hd" x="360" y="91" text-anchor="middle">Stock Videos</text>
+
+  <text class="t row" x="272" y="128" font-weight="600">Microsoft's free library</text>
+  <text class="t sub" x="272" y="149">Short clips built into PowerPoint.</text>
+
+  <text class="t yes" x="272" y="182">✓  No licensing worry</text>
+  <text class="t yes" x="272" y="204">✓  Plays with no internet</text>
+  <text class="t no"  x="272" y="226">✗  Generic — everyone has it</text>
+
+  <rect x="272" y="248" width="176" height="30" rx="6" fill="#f5f5f2"/>
+  <text class="t sub" x="360" y="267" text-anchor="middle" fill="#5c5c5c">Good for background clips</text>
+
+  <!-- column 3 -->
+  <rect x="480" y="66" width="216" height="232" rx="10" fill="#ffffff" stroke="#e3e3df" stroke-width="1.5"/>
+  <rect x="480" y="66" width="216" height="38" rx="10" fill="#f4f4f1"/>
+  <rect x="480" y="94" width="216" height="10" fill="#f4f4f1"/>
+  <text class="t hd" x="588" y="91" text-anchor="middle">Online Video</text>
+
+  <text class="t row" x="500" y="128" font-weight="600">A YouTube or Vimeo link</text>
+  <text class="t sub" x="500" y="149">Just the URL, not the video.</text>
+
+  <text class="t yes" x="500" y="182">✓  Adds almost no file size</text>
+  <text class="t no"  x="500" y="204">✗  Needs internet to play</text>
+  <text class="t no"  x="500" y="226">✗  Some videos block embedding</text>
+
+  <rect x="500" y="248" width="176" height="30" rx="6" fill="#fffaf6"/>
+  <text class="t sub" x="588" y="267" text-anchor="middle" fill="#a8431f">The one that fails live</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210" width="720" height="210" role="img">
+  <title>The PowerPoint ribbon with Home, Insert, Design and Slide Show highlighted</title>
+  <defs>
+    <style>
+      .t   { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .tab { font-size: 12px; fill: #8a8a82; }
+      .tab-on { font-size: 12px; fill: #c43e1c; font-weight: 600; }
+      .lbl { font-size: 11px; fill: #5c5c5c; }
+      .grp { font-size: 10px; fill: #9a9a92; letter-spacing: 0.04em; }
+    </style>
+  </defs>
+
+  <rect width="720" height="210" fill="#ffffff"/>
+
+  <!-- window chrome -->
+  <rect x="0" y="0" width="720" height="30" fill="#f2f2ef"/>
+  <circle cx="18" cy="15" r="4.5" fill="#d8d8d2"/>
+  <circle cx="34" cy="15" r="4.5" fill="#d8d8d2"/>
+  <circle cx="50" cy="15" r="4.5" fill="#d8d8d2"/>
+  <text class="t lbl" x="360" y="19" text-anchor="middle" font-size="10">Presentation1 - PowerPoint</text>
+  <line x1="0" y1="30" x2="720" y2="30" stroke="#e3e3df"/>
+
+  <!-- tab row -->
+  <rect x="0" y="30" width="720" height="34" fill="#fbfbf9"/>
+
+  <text class="t tab"    x="24"  y="51">File</text>
+  <text class="t tab-on" x="74"  y="51">Home</text>
+  <text class="t tab-on" x="130" y="51">Insert</text>
+  <text class="t tab"    x="186" y="51">Draw</text>
+  <text class="t tab-on" x="238" y="51">Design</text>
+  <text class="t tab"    x="302" y="51">Transitions</text>
+  <text class="t tab"    x="390" y="51">Animations</text>
+  <text class="t tab-on" x="478" y="51">Slide Show</text>
+  <text class="t tab"    x="566" y="51">Review</text>
+  <text class="t tab"    x="632" y="51">View</text>
+
+  <!-- active tab underline -->
+  <rect x="72"  y="60" width="38" height="3" rx="1.5" fill="#c43e1c"/>
+  <rect x="128" y="60" width="40" height="3" rx="1.5" fill="#c43e1c"/>
+  <rect x="236" y="60" width="48" height="3" rx="1.5" fill="#c43e1c"/>
+  <rect x="476" y="60" width="72" height="3" rx="1.5" fill="#c43e1c"/>
+  <line x1="0" y1="64" x2="720" y2="64" stroke="#e3e3df"/>
+
+  <!-- ribbon content: Home tab tool groups -->
+  <rect x="0" y="64" width="720" height="86" fill="#ffffff"/>
+
+  <!-- group 1 -->
+  <rect x="24" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="66" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="24" y="114" width="76" height="7" rx="3.5" fill="#eceae6"/>
+  <text class="t grp" x="24" y="136">CLIPBOARD</text>
+  <line x1="118" y1="72" x2="118" y2="142" stroke="#e3e3df"/>
+
+  <!-- group 2 -->
+  <rect x="134" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="176" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="218" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="260" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="134" y="114" width="160" height="7" rx="3.5" fill="#eceae6"/>
+  <text class="t grp" x="134" y="136">SLIDES</text>
+  <line x1="312" y1="72" x2="312" y2="142" stroke="#e3e3df"/>
+
+  <!-- group 3 -->
+  <rect x="328" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="370" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="328" y="114" width="76" height="7" rx="3.5" fill="#eceae6"/>
+  <text class="t grp" x="328" y="136">FONT</text>
+  <line x1="422" y1="72" x2="422" y2="142" stroke="#e3e3df"/>
+
+  <!-- group 4 -->
+  <rect x="438" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="480" y="76" width="34" height="30" rx="4" fill="#f4f4f1" stroke="#e3e3df"/>
+  <rect x="438" y="114" width="76" height="7" rx="3.5" fill="#eceae6"/>
+  <text class="t grp" x="438" y="136">PARAGRAPH</text>
+
+  <line x1="0" y1="150" x2="720" y2="150" stroke="#e3e3df"/>
+
+  <!-- note -->
+  <rect x="24" y="166" width="672" height="30" rx="6" fill="#fdf0ec"/>
+  <text class="t" x="360" y="185" text-anchor="middle" font-size="12.5" fill="#c43e1c">
+    Roughly 90% of everyday work happens in the four highlighted tabs.
+  </text>
+</svg>

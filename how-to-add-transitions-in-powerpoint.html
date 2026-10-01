@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>How to Add Transitions in PowerPoint (Including Morph)</title>
+<meta name="description" content="Add transitions in PowerPoint from the Transitions tab, set the speed and timing, and learn why a transition belongs to the slide you arrive at, not the one you leave.">
+<link rel="canonical" href="https://slidesorted.com/how-to-add-transitions-in-powerpoint">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Add Transitions in PowerPoint">
+<meta property="og:description" content="Applying a transition, setting its speed and timing, using Morph, and why the transition on your first slide never plays.">
+<meta property="og:url" content="https://slidesorted.com/how-to-add-transitions-in-powerpoint">
+<meta property="og:site_name" content="SlideSorted">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://slidesorted.com/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PowerPoint guides and tools">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "PowerPoint Guides", "item": "https://slidesorted.com/" },
+        { "@type": "ListItem", "position": 2, "name": "How to Add Transitions in PowerPoint", "item": "https://slidesorted.com/how-to-add-transitions-in-powerpoint" }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Add Transitions in PowerPoint",
+      "description": "Apply a slide transition, control its direction, speed and timing, and apply it to an entire presentation.",
+      "totalTime": "PT8M",
+      "tool": [{ "@type": "HowToTool", "name": "Microsoft PowerPoint (desktop app; the web app has a reduced set)" }],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Select the slide you are arriving at",
+          "text": "In the thumbnail pane, click the slide that should animate into view. A transition is stored on the slide being entered, so selecting slide 3 and applying Fade means slide 3 fades in as you leave slide 2."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Open the Transitions tab",
+          "text": "The Transitions tab sits in the ribbon between Design and Animations. It appears whenever a slide is selected and shows the transition gallery for that slide."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Choose an effect from the gallery",
+          "text": "Effects are grouped into Subtle, Exciting and Dynamic Content. Click the down arrow to see the entire gallery, and select an effect to see a preview."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Set the direction with Effect Options",
+          "text": "Effect Options appears next to the transitions gallery and changes meaning with the effect: for Push it chooses the direction, for Wipe the edge it starts from, for Morph what gets matched. Many, but not all, transitions can be customised, so it is dim for the ones that cannot."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Set the Duration",
+          "text": "Duration, in the Timing group, controls how long the transition takes. PowerPoint picks a default per effect. Around 0.5 to 0.75 seconds reads as smooth; anything past two seconds starts to feel like the machine has stalled."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Choose how the slide advances",
+          "text": "Tick On Mouse Click to wait for you, tick After and give a time to advance automatically, or tick both to advance on whichever happens first. The After setting is the one that produces a deck running on its own."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Apply it to every slide",
+          "text": "Apply To All, in the Timing group at the right-hand end of the Transitions tab, gives every slide the current transition and its timing. It flattens whatever was set on each slide, so save first if there is per-slide work you want to keep."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "name": "Check it in Slide Show mode",
+          "text": "Selecting an effect previews it on the slide, and Preview replays it with all your settings. Neither is the real thing, though: press F5 or Shift+F5 and move between slides. The order matters, because a transition plays on entering a slide, so you have to leave the previous one to see it."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why doesn't the transition on my first slide play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because a transition runs when you enter a slide, and the slide show opens directly on slide 1. You never enter it, so there is nothing to animate. Any transition set on slide 1 is ignored at the start of the show and only plays if you later navigate back to slide 1 from another slide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I remove a transition from every slide at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select a slide, choose None in the Transitions gallery, then click Apply To All. That clears the transition from every slide. You can also select all slides with Ctrl+A in the thumbnail pane or Slide Sorter view and then choose None."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Morph greyed out or missing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual cause is that the file is in Compatibility Mode, which happens with decks saved in the older .ppt format. Open File → Info and use Convert, or save the file as .pptx. Morph also needs PowerPoint 2019 or Microsoft 365 to be created: PowerPoint 2016 can play a Morph transition but cannot create one, and it needs at least two slides to have anything to match between."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should a slide transition be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Between half a second and one second for most business presentations. The default is often slower than it needs to be. A transition is there to signal that the slide changed, and the audience should not be able to study it. For a deck that is meant to feel calm, half a second of Fade is enough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do transitions survive exporting to PDF or video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not to PDF. A PDF is a set of static pages, so every transition is dropped and the deck becomes a plain sequence of slides. Exporting to video does keep transitions, because the video is a recording of the show actually running, including the timing you set."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="site__inner">
+    <a class="brand" href="/">Slide<span>Sorted</span></a>
+    <nav class="site-nav" aria-label="Guides">
+      <a href="/">Full guide</a>
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a>
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a>
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a>
+      <a href="/how-to-add-transitions-in-powerpoint" aria-current="page">Transitions</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs wrap" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">PowerPoint Guides</a></li>
+    <li aria-current="page">How to Add Transitions in PowerPoint</li>
+  </ol>
+</nav>
+
+<main id="main">
+
+  <div class="wrap hero">
+    <span class="eyebrow">Slide effects</span>
+    <h1>How to Add Transitions in PowerPoint</h1>
+    <p class="byline">Updated <time datetime="2026-10-01">October 1, 2026</time> · 7 minute read · <a href="/about">How these guides are written</a></p>
+  </div>
+
+  <article class="wrap">
+    <div class="answer">
+      <p>
+        <strong>To add a transition in PowerPoint:</strong> select the slide you are arriving at,
+        open the <strong>Transitions</strong> tab, and pick an effect from the gallery. Use
+        <strong>Effect Options</strong> for direction, <strong>Duration</strong> for speed, and
+        <strong>Apply To All</strong> to give every slide the same one. The single thing worth
+        knowing before you start: <strong>a transition is stored on the slide being entered, not
+        the one being left</strong> — which is why the effect you set on slide 1 never plays.
+      </p>
+    </div>
+
+    <figure>
+      <img src="images/transition-vs-animation.svg" width="720" height="340"
+           alt="Diagram contrasting a transition, which runs between two slides and is stored on the slide being entered, with an animation, which changes an object inside a single slide."
+           loading="lazy" decoding="async">
+      <figcaption>
+        <b>A transition changes the slide. An animation changes something on it.</b> They live on
+        two different ribbon tabs and are stored in two different places, which is why applying one
+        never produces the other.
+      </figcaption>
+    </figure>
+
+    <section>
+      <h2>Step by step</h2>
+      <ol class="steps">
+        <li>
+          <h3>Select the slide you are arriving at</h3>
+          <p>
+            In the thumbnail pane on the left, click the slide that should animate into view. This
+            is the step people get wrong, and it is worth reading twice.
+          </p>
+          <p>
+            A transition is stored on the slide being <em>entered</em>. If you select slide 3 and
+            apply Fade, you have not made slide 3 fade out — you have made slide 3 fade in as you
+            leave slide 2. The two are easy to confuse because the effect you see happens in the
+            gap between them.
+          </p>
+        </li>
+
+        <li>
+          <h3>Open the Transitions tab</h3>
+          <p>
+            The <strong>Transitions</strong> tab sits in the ribbon between <strong>Design</strong>
+            and <strong>Animations</strong>. It appears whenever a slide is selected and shows the
+            gallery of transitions that can be applied to that slide.
+          </p>
+          <p class="tip">
+            <strong>Only one transition per slide.</strong> If a slide already has one, picking a
+            different effect replaces it rather than adding to it. There is no way to stack two.
+          </p>
+        </li>
+
+        <li>
+          <h3>Choose an effect from the gallery</h3>
+          <p>
+            Effects are grouped into <strong>Subtle</strong>, <strong>Exciting</strong> and
+            <strong>Dynamic Content</strong>. Clicking one previews it immediately on the slide.
+            A down arrow to the right of the gallery opens the rest of it.
+          </p>
+          <p>
+            For a business deck, Subtle is almost always the right group. <em>Fade</em> and
+            <em>Push</em> are the two that survive contact with a real audience; the Exciting group
+            is where a presentation starts to look like a template rather than a document.
+          </p>
+        </li>
+
+        <li>
+          <h3>Set the direction with Effect Options</h3>
+          <p>
+            <strong>Effect Options</strong> sits next to the transitions gallery, and what it
+            offers depends on the effect you chose — for <em>Push</em> it picks the direction the
+            new slide arrives from, for <em>Wipe</em> it picks the edge it starts at, and for
+            <em>Morph</em> it controls what gets matched. Microsoft's own wording is that many, but
+            not all, transitions can be customised: if the button is dimmed, the effect you picked
+            is one of the ones with nothing to configure.
+          </p>
+        </li>
+
+        <li>
+          <h3>Set the Duration</h3>
+          <p>
+            <strong>Duration</strong>, in the <strong>Timing</strong> group, controls how long the
+            transition takes. PowerPoint picks a default that varies by effect, and it is usually
+            slower than it needs to be.
+          </p>
+          <p>
+            Around half a second to three-quarters of a second reads as smooth. Past two seconds
+            the audience stops reading it as motion and starts wondering whether the laptop has
+            frozen — which is the opposite of what the transition was for.
+          </p>
+        </li>
+
+        <li>
+          <h3>Choose how the slide advances</h3>
+          <p>
+            Two checkboxes under <strong>Timing</strong> decide when the slide leaves:
+          </p>
+          <p>
+            <strong>On Mouse Click</strong> — waits for you. The default, and the right choice
+            unless you have a reason.<br>
+            <strong>After</strong> — advances on its own once the given time has passed.
+          </p>
+          <p>
+            You can tick both. If you do, the slide advances on your click <em>or</em> after the
+            time runs out, whichever happens first. Setting <em>After</em> without meaning to is
+            the usual reason a deck starts running away during a presentation.
+          </p>
+        </li>
+
+        <li>
+          <h3>Apply it to every slide</h3>
+          <p>
+            <strong>Apply To All</strong>, in the <strong>Timing</strong> group at the right-hand
+            end of the tab, copies the current transition <em>and its timing</em> to every slide in
+            the presentation. It is the fastest way to make a deck consistent.
+          </p>
+          <p class="tip">
+            <strong>This overwrites what is already there.</strong> If three slides had custom
+            transitions, Apply To All flattens them along with everything else. If you have done
+            work you want to keep, save first.
+          </p>
+        </li>
+
+        <li>
+          <h3>Check it in Slide Show mode</h3>
+          <p>
+            Selecting an effect previews it on the slide, and <strong>Preview</strong> replays it
+            with all your settings applied — Microsoft's wording is to select a transition to see a
+            preview. That preview is not the real thing, though. Press
+            <span class="keys">F5</span> to start from the beginning, or
+            <span class="keys">Shift + F5</span> to start from the current slide, and move between
+            slides to watch it properly.
+          </p>
+          <p>
+            Remember the order while you test: the transition plays when you <em>arrive</em> at a
+            slide, so you will not see slide 3's transition until you leave slide 2.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>The part everyone gets wrong</h2>
+      <p>
+        If there is one thing worth taking from this page, it is this. A transition belongs to the
+        slide you are moving <strong>to</strong>, not the slide you are moving <strong>from</strong>.
+        Microsoft's own documentation states it as: a transition determines how a slide enters
+        <em>and</em> how the previous slide exits.
+      </p>
+      <p>
+        Three consequences follow, and each one produces a support question somewhere:
+      </p>
+      <ul class="issues">
+        <li>
+          <strong>To remove the effect between slides 2 and 3, select slide 3.</strong> Selecting
+          slide 2 and clicking None will remove the effect between slides 1 and 2 instead, which
+          is not what you wanted and is confusing to watch happen.
+        </li>
+        <li>
+          <strong>A transition on slide 1 never plays at the start.</strong> A slide show opens
+          directly on slide 1 — you never arrive at it, so there is nothing to animate. It will
+          play if you later navigate back to slide 1 from another slide, which makes it look
+          intermittent rather than absent.
+        </li>
+        <li>
+          <strong>Apply To All gives every slide the same transition, including slide 1.</strong>
+          So the one slide where it cannot be seen still gets one. This is harmless, but it is why
+          the thumbnail pane shows a transition icon on a slide that appears to have no effect.
+        </li>
+      </ul>
+      <div class="tip">
+        <p>
+          <strong>The thumbnail pane tells you which slides have a transition.</strong> A small
+          star-like icon appears next to the slide number. It is the fastest way to audit a deck
+          someone else built, and to spot the slide where an effect was applied by accident.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Morph: the one worth learning</h2>
+      <p>
+        <strong>Morph</strong> is a transition, and it is the only one on the list that does
+        something you cannot achieve any other way. Instead of a canned effect, it compares two
+        slides and animates the difference — a shape that moves, grows or changes colour between
+        one slide and the next appears to travel, rather than cutting.
+      </p>
+
+      <h2>How to build a Morph transition</h2>
+      <ol class="steps">
+        <li>
+          <h3>Build the first slide</h3>
+          <p>
+            Put the object where you want it to start — a shape, a picture, a line of text. This is
+            the state the audience sees first.
+          </p>
+        </li>
+        <li>
+          <h3>Duplicate the slide</h3>
+          <p>
+            Right-click the thumbnail and choose <strong>Duplicate Slide</strong>, or press
+            <span class="keys">Ctrl + D</span>. Duplicating matters: Morph pairs objects by
+            position and type, and a duplicate guarantees the two slides share them.
+          </p>
+        </li>
+        <li>
+          <h3>Change the object on the duplicate</h3>
+          <p>
+            Move it, resize it, recolour it, or delete it. Whatever you change is what Morph
+            animates. Do not add a new object unless you also have something for it to pair with —
+            an object with no counterpart simply appears at the end.
+          </p>
+        </li>
+        <li>
+          <h3>Apply Morph to the second slide</h3>
+          <p>
+            With the duplicate selected, open <strong>Transitions</strong> and choose
+            <strong>Morph</strong>. Then use <strong>Effect Options</strong> to choose between
+            <em>Objects</em>, <em>Words</em> and <em>Characters</em> — Words and Characters are what
+            make individual letters rearrange rather than the whole text box sliding.
+          </p>
+        </li>
+      </ol>
+
+      <h2>Where Morph goes wrong</h2>
+      <ul class="issues">
+        <li>
+          <strong>Charts do not morph — they cross-fade.</strong> A chart on both slides will
+          dissolve from one into the other rather than animating its bars. This is the most common
+          surprise, and there is no setting that fixes it.
+        </li>
+        <li>
+          <strong>Nothing matched, so it fades.</strong> If the two slides have no object in
+          common, Morph has nothing to pair and quietly falls back to a cross-fade. It looks like
+          Morph is broken; it is working as designed.
+        </li>
+        <li>
+          <strong>Morph is greyed out or absent.</strong> Almost always Compatibility Mode — the
+          file is in the old <code>.ppt</code> format. <strong>File → Info → Convert</strong>, or
+          save as <code>.pptx</code>. Creating Morph needs PowerPoint 2019 or Microsoft 365;
+          PowerPoint 2016 can play one but not create one.
+        </li>
+        <li>
+          <strong>The wrong objects pair up.</strong> Morph guesses which shape on slide A belongs
+          with which on slide B, and it sometimes guesses badly. You can force the pairing: open
+          <strong>Home → Select → Selection Pane</strong> on Windows (<strong>Home → Arrange →
+          Selection Pane</strong> on Mac) and give the two objects the same name, starting with two
+          exclamation marks — <code>!!Shape1</code> on both slides. Morph will only pair an object
+          named this way with another named the same way.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Transitions versus animations</h2>
+      <p>
+        These are the two effects people mix up most, and the confusion has a cost: you apply one,
+        cannot tell whether it worked, and conclude PowerPoint is broken.
+      </p>
+      <ul class="plain">
+        <li>
+          <strong>A transition applies to a whole slide and plays between two of them.</strong> One
+          per slide, set on the Transitions tab, stored on the slide being entered.
+        </li>
+        <li>
+          <strong>An animation applies to an object and plays within one slide.</strong> As many
+          per slide as you like, set on the Animations tab, stored on the object itself.
+        </li>
+      </ul>
+      <p>
+        Neither plays properly in the normal editing view: you get a one-off preview when you
+        apply it, but both need Slide Show mode before you know how they will really look. If you are trying to
+        make bullet points appear one at a time, that is an animation rather than a transition;
+        <a href="/how-to-add-animation-in-powerpoint">how to add animation in PowerPoint</a>
+        covers it.
+      </p>
+    </section>
+
+    <section>
+      <h2>When it does not work</h2>
+      <ul class="issues">
+        <li>
+          <strong>Nothing happens on slide 1.</strong> Expected — see above. The show opens on
+          slide 1, so there is no entry to animate.
+        </li>
+        <li>
+          <strong>No transitions play anywhere.</strong> Check
+          <strong>Slide Show → Set Up Slide Show</strong> and make sure <em>Show without
+          animation</em> is unticked. That box is there for presenting a deck without any effects,
+          and a deck with it ticked behaves exactly like one whose transitions have all vanished.
+        </li>
+        <li>
+          <strong>The effect is on the wrong slides.</strong> Either it was applied to the slide
+          being left rather than entered, or <strong>Apply To All</strong> overwrote per-slide
+          choices. The thumbnail-pane icons will show you where the transitions actually are.
+        </li>
+        <li>
+          <strong>The deck advances on its own.</strong> A time is set under <em>After</em> in the
+          Timing group, probably from Apply To All. Untick it, or use
+          <strong>Slide Show → Set Up Slide Show</strong> to check whether rehearsed timings are
+          being used.
+        </li>
+        <li>
+          <strong>It stutters.</strong> Long durations on a large deck, or hardware acceleration.
+          Try <strong>File → Options → Advanced → Display</strong> and toggle hardware graphics
+          acceleration, then test again.
+        </li>
+        <li>
+          <strong>Morph shows a fade instead of moving.</strong> The two slides share no object in
+          common, so Morph has nothing to pair. Duplicate the first slide and edit the copy rather
+          than building the second one from scratch — the <em>Where Morph goes wrong</em> list above
+          covers the rest.
+        </li>
+      </ul>
+    </section>
+
+    <section class="faq">
+      <h2>Questions</h2>
+      <dl>
+        <dt>Why doesn't the transition on my first slide play?</dt>
+        <dd>
+          Because a transition runs when you <em>enter</em> a slide, and a slide show opens
+          directly on slide 1. You never enter it, so there is nothing to animate. A transition
+          set on slide 1 only plays if you later navigate back to it from another slide — which
+          makes the behaviour look intermittent rather than absent.
+        </dd>
+
+        <dt>How do I remove a transition from every slide at once?</dt>
+        <dd>
+          Select a slide, choose <strong>None</strong> in the Transitions gallery, then click
+          <strong>Apply To All</strong>. Alternatively, select every slide with
+          <span class="keys">Ctrl + A</span> in the thumbnail pane or in Slide Sorter view and
+          choose <strong>None</strong> once.
+        </dd>
+
+        <dt>Why is Morph greyed out or missing?</dt>
+        <dd>
+          Almost always Compatibility Mode, which happens with decks saved in the older
+          <code>.ppt</code> format — <strong>File → Info → Convert</strong>, or save as
+          <code>.pptx</code>. Creating Morph also needs PowerPoint 2019 or Microsoft 365;
+          PowerPoint 2016 can play one but not create one. And a single-slide deck has nothing to
+          match between, so Morph has no work to do.
+        </dd>
+
+        <dt>How long should a slide transition be?</dt>
+        <dd>
+          Half a second to a second for most business presentations. A transition exists to signal
+          that the slide changed; the audience should not have time to study it. If someone
+          notices the transition rather than the slide, it is too long.
+        </dd>
+
+        <dt>Do transitions survive exporting to PDF or video?</dt>
+        <dd>
+          Not to PDF — a PDF is static pages, so every transition is dropped and the deck becomes a
+          plain sequence of slides. Exporting to video does keep them, because the video is a
+          recording of the show actually running, including the timing you set.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="sources">
+      <h2>Official references</h2>
+      <ul>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/add-change-or-remove-transitions-between-slides-3f8244bf-f893-4efd-a7eb-3a4845c9c971" rel="noopener">Add, change, or remove transitions between slides</a>
+          <span>Microsoft's reference for the Transitions tab, Effect Options, duration, sound and Apply To All</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/morph-transition-tips-and-tricks-bc7f48ff-f152-4ee8-9081-d3121788024f" rel="noopener">Morph transition: Tips and tricks</a>
+          <span>What Morph matches, why charts cross-fade, and the !! naming trick for forcing a pairing</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/powerpoint/set-the-timing-and-speed-of-a-transition" rel="noopener">Set the timing and speed of a transition</a>
+          <span>The Timing group, which is where Duration, Sound, Advance Slide and Apply To All actually live</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/powerpoint/training/use-the-morph-transition-in-powerpoint" rel="noopener">Use the Morph transition in PowerPoint</a>
+          <span>The duplicate-the-slide workflow, and which versions can create a Morph rather than only play one</span>
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- ================= RELATED ================= -->
+  <section class="wrap">
+    <h2>Related guides</h2>
+    <div class="related">
+      <a href="/how-to-add-animation-in-powerpoint">
+        <span class="related__label">Sibling</span>
+        <span class="related__title">How to Add Animation in PowerPoint</span>
+        <span class="related__desc">The other half of the same idea — effects that apply to objects inside a slide rather than to the slide itself.</span>
+      </a>
+      <a href="/how-to-use-slide-master-in-powerpoint">
+        <span class="related__label">Structure</span>
+        <span class="related__title">How to Use Slide Master</span>
+        <span class="related__desc">Transitions are set slide by slide. Everything that should be consistent across the deck lives here instead.</span>
+      </a>
+      <a href="/how-to-compress-a-powerpoint-file">
+        <span class="related__label">Related</span>
+        <span class="related__title">How to Compress a PowerPoint File</span>
+        <span class="related__desc">If the deck has grown too large to send, this is what to do about it.</span>
+      </a>
+      <a href="/">
+        <span class="related__label">Start here</span>
+        <span class="related__title">How to Use PowerPoint</span>
+        <span class="related__desc">The full beginner's guide, for everything that comes before effects.</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cta">
+      <h2>Less is the whole trick</h2>
+      <p>
+        Pick one transition, set it to about half a second, and apply it to the deck. An audience
+        should notice the content, not the movement between slides.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      <a href="/">How to Use PowerPoint</a> ·
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a> ·
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a> ·
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a> ·
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </p>
+    <p>
+      <a href="/how-to-use-slide-master-in-powerpoint">Slide Master</a> ·
+      <a href="/how-to-embed-an-excel-chart-in-powerpoint">Embed an Excel chart</a> ·
+      <a href="/how-to-make-a-powerpoint-template">Make a template</a>
+    </p>
+    <p>
+      <a href="/how-to-compress-a-powerpoint-file">Compress a file</a> ·
+      <a href="/powerpoint-file-size-checker">File size checker</a> ·
+      <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
+      <a href="/about">About</a>
+    </p>
+    <p>Last updated October 1, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+  </div>
+</footer>
+
+</body>
+</html>

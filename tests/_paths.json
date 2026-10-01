@@ -1,0 +1,169 @@
+{
+ "how-to-add-animation-in-powerpoint.html": {
+  "paths": [
+   "Animations → Animation Pane",
+   "Effect Options → By Paragraph",
+   "Effect Options → By Paragraph and",
+   "Set Start → On Click",
+   "Slide Show → From Current Slide to",
+   "Slide Show → Set Up Slide Show",
+   "Start → On Click"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/animate-text-or-objects-df509fcc-9088-476d-ba83-ece59b6005a0"
+  ]
+ },
+ "how-to-add-speaker-notes-in-powerpoint.html": {
+  "paths": [
+   "File → Export → Create PDF",
+   "File → Print",
+   "First → Notes and",
+   "Go to Slide Show → Presenter View and",
+   "Go to View → Notes",
+   "Select View → Notes and",
+   "Slide Show → Presenter View",
+   "View → Normal to",
+   "View → Notes Master",
+   "View → Notes Master and",
+   "View → Notes to"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/add-speaker-notes-to-your-slides-26985155-35f5-45ba-812b-e1bd3c48928e",
+   "https://support.microsoft.com/en-us/office/present-slide-shows-cea3f3ee-c0b2-4119-bd3e-e67665210214"
+  ]
+ },
+ "how-to-add-transitions-in-powerpoint.html": {
+  "paths": [
+   "Check Slide Show → Set Up Slide Show",
+   "File → Info → Convert",
+   "Home → Arrange → Selection Pane",
+   "Home → Select → Selection Pane",
+   "Slide Show → Set Up Slide Show",
+   "Try File → Options → Advanced → Display and"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/add-change-or-remove-transitions-between-slides-3f8244bf-f893-4efd-a7eb-3a4845c9c971",
+   "https://support.microsoft.com/en-us/office/morph-transition-tips-and-tricks-bc7f48ff-f152-4ee8-9081-d3121788024f"
+  ]
+ },
+ "how-to-compress-a-powerpoint-file.html": {
+  "paths": [
+   "File → Info",
+   "File → Info → Compress Media to",
+   "File → Options → Save",
+   "Go to File → Info → Compress Media and",
+   "Go to View → Slide Master",
+   "Picture Format → Compress Pictures",
+   "Picture Format → Compress Pictures to",
+   "Use File → Save As and"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/reduce-the-file-size-of-your-powerpoint-presentations-9548ffd4-d853-41e7-8e40-b606bca036b4",
+   "https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535"
+  ]
+ },
+ "how-to-embed-an-excel-chart-in-powerpoint.html": {
+  "paths": [
+   "Check File → Info → Edit Links to Files",
+   "Excel → Chart",
+   "File → Info → Edit Links to Files",
+   "File → Info → Edit Links to Files → Update Now",
+   "Go to File → Info → Edit Links to Files",
+   "Home → Paste → Paste Special",
+   "In File → Info → Edit Links to Files",
+   "Links → Info → Edit Links to Files",
+   "PowerPoint → Paste → Paste Special",
+   "Use File → Info → Compress Media"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/insert-and-update-excel-data-in-powerpoint-0690708a-5ce6-41b4-923f-11d57554138d",
+   "https://support.microsoft.com/en-us/office/update-or-remove-a-broken-link-to-an-external-file-29485589-816e-4841-81b7-ff90ae5a2cc4"
+  ]
+ },
+ "how-to-insert-a-video-in-powerpoint.html": {
+  "paths": [
+   "Go to File → Info → Compress Media and",
+   "Insert → Video and",
+   "Insert → Video → This Device",
+   "Picture Format → Align",
+   "Playback → Poster Frame → Current Frame",
+   "Playback → Volume",
+   "Set Playback → Start → Automatically",
+   "Use File → Info → Compress Media and"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/insert-and-play-a-video-file-from-your-computer-f3fcbd3e-5f86-4320-8aea-31bff480ed02"
+  ]
+ },
+ "how-to-make-a-powerpoint-template.html": {
+  "paths": [
+   "Colors → Customize Colors and",
+   "Design → Slide Size → Widescreen",
+   "File → Info → Compress Media",
+   "File → New → Blank Presentation",
+   "File → New → Personal",
+   "File → New → Personal Two",
+   "File → Options → Save → Default",
+   "File → Options → Save → Embed",
+   "File → Save As and",
+   "Home → Reset",
+   "Insert → Pictures",
+   "Picture Format → Compress Pictures",
+   "PowerPoint Template File → Save As",
+   "Slide Master View → Slide Master",
+   "Slide Master → Insert Placeholder",
+   "Then → Customize Fonts and",
+   "Use File → New → Personal and",
+   "View → Slide Master to"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/create-and-save-a-powerpoint-template-ee4429ad-2a74-4100-82f7-50f8169c8aca"
+  ]
+ },
+ "how-to-recover-an-unsaved-powerpoint.html": {
+  "paths": [
+   "AutoRecover → Options → Save",
+   "Change → Options → Save",
+   "File → Info → Manage Presentation → Recover Unsaved Presentations",
+   "File → Open → Recent to",
+   "File → Options → Save",
+   "File → Options → Save and",
+   "Go to File → Options → Save and",
+   "OneDrive → Options → Save"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/collab-files/recover-your-microsoft-365-files",
+   "https://support.microsoft.com/en-us/office/recover-an-earlier-version-of-an-office-file-169cb166-e7e2-438e-8f39-9a8927828121"
+  ]
+ },
+ "how-to-use-slide-master-in-powerpoint.html": {
+  "paths": [
+   "Home → Reset",
+   "Home → Reset to",
+   "Insert → Pictures and",
+   "Slide Master → Insert Placeholder",
+   "Use Home → Reset",
+   "View → Normal",
+   "View → Slide Master"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/customize-a-slide-master-036d317b-3251-4237-8ddc-22f4668e2b56",
+   "https://support.microsoft.com/en-us/office/what-is-a-slide-master-in-powerpoint-b9abb2a0-7aef-4257-a14e-4329c904da54"
+  ]
+ },
+ "index.html": {
+  "paths": [
+   "File → New → Personal",
+   "Home → New Slide and",
+   "Insert → Text Box and",
+   "Or → New Slide",
+   "Slide Show → Presenter View",
+   "Use File → New to",
+   "Use Picture Format → Compress Pictures"
+  ],
+  "cites": [
+   "https://support.microsoft.com/en-us/office/present-slide-shows-cea3f3ee-c0b2-4119-bd3e-e67665210214",
+   "https://support.microsoft.com/en-us/office/add-speaker-notes-to-your-slides-26985155-35f5-45ba-812b-e1bd3c48928e"
+  ]
+ }
+}

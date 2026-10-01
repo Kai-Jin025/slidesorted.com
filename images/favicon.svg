@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img">
+  <title>SlideSorted</title>
+  <!-- A slide shape on the brand accent. Kept to three shapes so it still
+       reads at 16px in a browser tab. -->
+  <rect width="32" height="32" rx="7" fill="#c43e1c"/>
+  <rect x="5" y="9.5" width="22" height="13" rx="2" fill="#ffffff"/>
+  <rect x="8.2" y="12.6" width="9" height="1.9" rx="0.95" fill="#c43e1c"/>
+  <rect x="8.2" y="16.6" width="14.6" height="1.9" rx="0.95" fill="#c43e1c" opacity="0.45"/>
+</svg>

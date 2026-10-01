@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 486" width="720" height="486" role="img">
+  <title>The Slide Master is the parent that every layout inherits from, but direct formatting overrides it</title>
+  <defs>
+    <style>
+      .t    { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .cap  { font-size: 10px; fill: #9a9a92; letter-spacing: 0.10em; }
+      .pt   { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+      .ps   { font-size: 11.5px; fill: #a3553a; }
+      .ct   { font-size: 13px; font-weight: 650; fill: #1a1a1a; }
+      .cs   { font-size: 10.5px; fill: #8a8a82; }
+      .leg  { font-size: 13px; }
+      .n1   { font-size: 13px; font-weight: 700; fill: #7a3a22; }
+      .n2   { font-size: 12px; fill: #8a6a58; }
+    </style>
+  </defs>
+
+  <rect width="720" height="486" fill="#ffffff"/>
+  <text class="t cap" x="360" y="28" text-anchor="middle">SLIDE MASTER VIEW</text>
+
+  <!-- parent master -->
+  <rect x="210" y="44" width="300" height="82" rx="10" fill="#fdf0ec" stroke="#c43e1c" stroke-width="2"/>
+  <text class="t pt" x="360" y="78" text-anchor="middle">Slide Master (parent)</text>
+  <text class="t ps" x="360" y="100" text-anchor="middle">fonts  ·  colors  ·  background  ·  logo</text>
+
+  <!-- fan-out connectors -->
+  <path d="M360 126 C360 162 114 156 114 190" fill="none" stroke="#e0c4b8" stroke-width="1.6"/>
+  <path d="M360 126 L360 190" fill="none" stroke="#e0c4b8" stroke-width="1.6"/>
+  <path d="M360 126 C360 162 606 156 606 190" fill="none" stroke="#e0c4b8" stroke-width="1.6"/>
+
+  <text class="t cs" x="360" y="168" text-anchor="middle" font-size="10.5" fill="#b09080">every layout inherits</text>
+
+  <!-- child layouts -->
+  <rect x="24" y="190" width="180" height="76" rx="9" fill="#fbfbf9" stroke="#e3e3df" stroke-width="1.5"/>
+  <text class="t ct" x="114" y="222" text-anchor="middle">Title Slide</text>
+  <text class="t cs" x="114" y="242" text-anchor="middle">own placeholder positions</text>
+
+  <rect x="270" y="190" width="180" height="76" rx="9" fill="#fbfbf9" stroke="#e3e3df" stroke-width="1.5"/>
+  <text class="t ct" x="360" y="222" text-anchor="middle">Title and Content</text>
+  <text class="t cs" x="360" y="242" text-anchor="middle">own placeholder positions</text>
+
+  <rect x="516" y="190" width="180" height="76" rx="9" fill="#fbfbf9" stroke="#e3e3df" stroke-width="1.5"/>
+  <text class="t ct" x="606" y="222" text-anchor="middle">Two Content</text>
+  <text class="t cs" x="606" y="242" text-anchor="middle">own placeholder positions</text>
+
+  <!-- legend -->
+  <rect x="24" y="296" width="672" height="34" rx="7" fill="#fdf0ec"/>
+  <text class="t leg" x="360" y="318" text-anchor="middle" fill="#c43e1c">
+    Edit the parent&#160;&#160;→&#160;&#160;every slide in the deck changes
+  </text>
+
+  <rect x="24" y="340" width="672" height="34" rx="7" fill="#f5f5f2"/>
+  <text class="t leg" x="360" y="362" text-anchor="middle" fill="#5c5c5c">
+    Edit one layout&#160;&#160;→&#160;&#160;only the slides using that layout change
+  </text>
+
+  <!-- the catch -->
+  <line x1="24" y1="400" x2="696" y2="400" stroke="#e3e3df"/>
+
+  <rect x="24" y="418" width="672" height="56" rx="8" fill="#fffaf6" stroke="#f0d5c6"/>
+  <circle cx="52" cy="446" r="10" fill="none" stroke="#c43e1c" stroke-width="1.8"/>
+  <text class="t" x="52" y="451" text-anchor="middle" font-size="13" font-weight="700" fill="#c43e1c">!</text>
+  <text class="t n1" x="76" y="440">The catch: direct formatting beats the master.</text>
+  <text class="t n2" x="76" y="460">A slide formatted by hand ignores every master change. Fix it with Home → Reset.</text>
+</svg>

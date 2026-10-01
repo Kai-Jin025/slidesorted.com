@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>How to Embed an Excel Chart in PowerPoint (Linked or Static)</title>
+<meta name="description" content="Copy the chart in Excel, then use Paste Special in PowerPoint to link it, embed it, or paste it as a picture. Includes how to update a linked chart and fix the 'linked file unavailable' error.">
+<link rel="canonical" href="https://slidesorted.com/how-to-embed-an-excel-chart-in-powerpoint">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Embed an Excel Chart in PowerPoint">
+<meta property="og:description" content="Linked, embedded or pasted as a picture — how to choose, and how to fix broken links.">
+<meta property="og:url" content="https://slidesorted.com/how-to-embed-an-excel-chart-in-powerpoint">
+<meta property="og:site_name" content="SlideSorted">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://slidesorted.com/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PowerPoint guides and tools">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "PowerPoint Guides", "item": "https://slidesorted.com/" },
+        { "@type": "ListItem", "position": 2, "name": "How to Embed an Excel Chart in PowerPoint", "item": "https://slidesorted.com/how-to-embed-an-excel-chart-in-powerpoint" }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Embed an Excel Chart in PowerPoint",
+      "description": "Bring an Excel chart into a PowerPoint slide as a linked object, an embedded object, or a static picture, and control whether it updates.",
+      "totalTime": "PT10M",
+      "tool": [
+        { "@type": "HowToTool", "name": "Microsoft Excel" },
+        { "@type": "HowToTool", "name": "Microsoft PowerPoint" }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Build the chart in Excel, not in PowerPoint",
+          "text": "Excel's charting tools are better than PowerPoint's, and building the chart in the spreadsheet keeps it connected to its data. Create and format it there, then move it across."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Copy the whole chart",
+          "text": "Click the border of the chart in Excel so the whole chart is selected, not a single bar or the legend, then press Ctrl+C (⌘C on Mac). Clicking inside the plot area selects a chart element instead, which is a common reason people paste something odd."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use Paste Special, not a plain paste",
+          "text": "On the slide, go to Home → Paste → Paste Special, or press Ctrl+Alt+V (⌘+Control+V on Mac). A plain Ctrl+V makes this choice for you, and it is not the choice you want when the chart needs to do anything other than sit there."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Choose the right paste option",
+          "text": "Microsoft Excel Chart Object embeds a copy of the workbook, so the data lives inside the .pptx and is editable through Edit Data. The same entry with Paste link selected creates a live link to the source workbook. Picture (Enhanced Metafile) or Picture (PNG) pastes a static image. When you paste with a link or as an embedded object, Keep Source Formatting preserves Excel's colors while Use Destination Theme restyles the chart to match your deck."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Control whether links update on their own",
+          "text": "Go to File → Info → Edit Links to Files. The dialog lists every linked object in the presentation and has an Automatic Update checkbox. Leaving it on re-reads the spreadsheet whenever the deck opens, which is convenient while building and a liability the day you present, because a missing source file turns the chart into an error message."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Update a linked chart manually",
+          "text": "Right-click the chart and choose Update Link, or use File → Info → Edit Links to Files → Update Now. With automatic updating switched off, this is how you pull in the latest numbers."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Edit embedded data",
+          "text": "For an embedded chart, right-click and choose Edit Data. A small spreadsheet opens inside PowerPoint showing the data stored in the deck; edit it there and the chart updates. It is a copy, so changing it does not touch your original Excel file, and vice versa."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "name": "Break the link before you send or present the deck",
+          "text": "In File → Info → Edit Links to Files, select the link and click Break Link. The chart becomes a static object that will never update again and will never show a broken-link error on any machine. Do this once the numbers are final — the day before you present, not the morning of."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between linking and embedding an Excel chart?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A linked chart stores a reference to the Excel file, so it updates when that file changes — but it breaks if the file moves or the recipient does not have it. An embedded chart stores a copy of the data inside the PowerPoint file, so it always travels with the deck but does not update automatically from the original spreadsheet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my chart say the linked file is unavailable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The source Excel workbook has been moved, renamed or deleted, so PowerPoint cannot resolve the path. Either restore the file to its original location, or use File, then Info, then Edit Links to Files, and repoint the link. If you no longer need live updates, break the link instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my Excel chart update automatically in PowerPoint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if it was pasted as a linked object and automatic updating is switched on. Check File, then Info, then Edit Links to Files. Note that automatic updates still require the source Excel file to be present and reachable. Embedded and picture versions never update on their own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does embedding an Excel chart increase the PowerPoint file size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can, because embedding stores a copy of the workbook inside the presentation. Linking keeps the file small since only a reference is stored. Pasting as a picture sits in between, depending on the image resolution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I embed an Excel chart in the PowerPoint web app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Support is limited. The web app can display an embedded chart that was created in the desktop app, but the full Paste Special options and the Edit Links to Files dialog are desktop features. Do this work in the desktop applications."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="site__inner">
+    <a class="brand" href="/">Slide<span>Sorted</span></a>
+    <nav class="site-nav" aria-label="Guides">
+      <a href="/">Full guide</a>
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a>
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a>
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a>
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs wrap" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">PowerPoint Guides</a></li>
+    <li aria-current="page">Embed an Excel Chart</li>
+  </ol>
+</nav>
+
+<main id="main">
+
+  <div class="wrap hero">
+    <span class="eyebrow">Intermediate guide</span>
+    <h1>How to Embed an Excel Chart in PowerPoint</h1>
+    <p class="byline">Updated <time datetime="2026-09-30">September 30, 2026</time> · 7 minute read · <a href="/about">How these guides are written</a></p>
+  </div>
+
+  <article class="wrap">
+    <div class="answer">
+      <p>
+        <strong>To embed an Excel chart in PowerPoint:</strong> copy the chart in Excel, then in
+        PowerPoint use <strong>Home → Paste → Paste Special</strong>
+        (<span class="keys">Ctrl+Alt+V</span> (<span class="keys">⌘+Control+V</span> on Mac)) instead of a plain paste. Choose
+        <strong>Keep Source Formatting &amp; Link Data</strong> for a chart that updates from the
+        spreadsheet, or <strong>Use Destination Theme &amp; Embed Workbook</strong> to store a copy
+        of the data inside the deck. Choose <strong>Picture</strong> if it never needs to change.
+      </p>
+    </div>
+
+    <p>
+      The question behind this search is almost always "how do I make the chart update when the
+      numbers change" — and the answer depends entirely on which of three things you actually need.
+      Get this choice right and the chart behaves; get it wrong and you will meet the
+      "linked file is unavailable" error in front of an audience.
+    </p>
+
+    <section>
+      <h2>Pick your method before you start</h2>
+      <p class="section__intro">
+        This decision drives everything else, so make it first.
+      </p>
+      <ul class="plain">
+        <li>
+          <strong>Paste as a Picture — the numbers are final</strong>
+          A static image. It never updates, but it also never breaks, never needs the Excel file,
+          and looks identical on every machine. For a deck you are about to present, this is the
+          safe answer more often than people expect.
+        </li>
+        <li>
+          <strong>Link the chart — the numbers will change</strong>
+          PowerPoint stores a path to the Excel file and re-reads it on update. The chart stays in
+          sync — but only while the Excel file sits where it was, and only on a machine that can
+          reach it.
+        </li>
+        <li>
+          <strong>Embed the chart — you want the data inside the deck</strong>
+          A copy of the workbook is stored inside the .pptx. The chart travels with the file and
+          can be edited via <strong>Edit Data</strong>, but it will not pick up changes made to the
+          original spreadsheet.
+        </li>
+        <li>
+          <strong>Build it in PowerPoint — you never had an Excel file</strong>
+          <strong>Insert → Chart</strong> creates a chart with its own mini spreadsheet inside
+          PowerPoint. Perfectly capable for simple charts, and it avoids the whole issue.
+        </li>
+      </ul>
+      <p class="tip">
+        <strong>The combination that works for most people:</strong> link while the data is still
+        moving, then <strong>break the link</strong> the day before you present. You get live
+        updates during preparation and a static, unbreakable chart on stage.
+      </p>
+      <figure>
+        <img src="images/chart-link-embed-picture.svg"
+             alt="Comparison of three ways to paste an Excel chart into PowerPoint: pasted as a picture it never updates and never breaks, linked it updates from Excel but breaks if the file moves, embedded it travels with the deck but does not follow the original spreadsheet"
+             width="720" height="356" loading="lazy" decoding="async">
+        <figcaption>
+          <b>Three options, three different failure modes.</b> Picture can't break, Linked can't
+          stay still, Embedded can't follow the original. Pick the failure you can live with.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Step by step</h2>
+      <ol class="steps">
+        <li>
+          <h3>Build the chart in Excel, not in PowerPoint</h3>
+          <p>
+            Excel's charting tools are better than PowerPoint's, and working in the spreadsheet
+            keeps the chart connected to its data. Build and format it there, then move it across.
+          </p>
+        </li>
+
+        <li>
+          <h3>Copy the whole chart</h3>
+          <p>
+            Click the <strong>border</strong> of the chart in Excel so the whole chart is selected,
+            not a single bar or the legend, then press <span class="keys">Ctrl+C</span> (<span class="keys">⌘C</span> on Mac). Clicking
+            inside the plot area selects a chart element instead — a common reason people paste
+            something odd.
+          </p>
+        </li>
+
+        <li>
+          <h3>Use Paste Special, not a plain paste</h3>
+          <p>
+            On the slide, go to <strong>Home → Paste → Paste Special</strong>, or press
+            <span class="keys">Ctrl+Alt+V</span> (<span class="keys">⌘+Control+V</span> on Mac).
+          </p>
+          <p class="tip">
+            <strong>A plain <span class="keys">Ctrl+V</span> (<span class="keys">⌘V</span> on Mac) makes this choice for you</strong> and
+            it is not the choice you want. Always go through Paste Special when the chart needs to
+            do anything other than sit there.
+          </p>
+        </li>
+
+        <li>
+          <h3>Choose the right paste option</h3>
+          <p>
+            The dialog lists several entries. The three that matter:
+          </p>
+          <p>
+            <strong>Microsoft Excel Chart Object</strong> — embeds a copy of the workbook. The data
+            lives inside the .pptx and is editable via <strong>Edit Data</strong>. Does not follow
+            the original file.<br>
+            <strong>Microsoft Excel Chart Object</strong> with <em>Paste link</em> selected —
+            creates a live link to the source workbook.<br>
+            <strong>Picture (Enhanced Metafile)</strong> or <strong>Picture (PNG)</strong> — a
+            static image.
+          </p>
+          <p>
+            When you paste with a link or as an embedded object, PowerPoint also offers the theme
+            choice: <strong>Keep Source Formatting</strong> preserves Excel's colors,
+            <strong>Use Destination Theme</strong> restyles the chart to match your PowerPoint
+            theme. If your deck has a color scheme, the destination theme option keeps things
+            consistent.
+          </p>
+        </li>
+
+        <li>
+          <h3>Control whether links update on their own</h3>
+          <p>
+            Go to <strong>File → Info → Edit Links to Files</strong>. This dialog lists every linked
+            object in the presentation and has an <strong>Automatic Update</strong> checkbox.
+          </p>
+          <p>
+            Leaving it on means the chart re-reads the spreadsheet whenever you open the deck. That
+            is convenient while you are building and a liability the day you present, because a
+            missing file turns your chart into an error message.
+          </p>
+        </li>
+
+        <li>
+          <h3>Update a linked chart manually</h3>
+          <p>
+            Right-click the chart and choose <strong>Update Link</strong>, or use
+            <strong>File → Info → Edit Links to Files → Update Now</strong>. If automatic updating
+            is off, this is how you pull in the latest numbers.
+          </p>
+        </li>
+
+        <li>
+          <h3>Edit embedded data</h3>
+          <p>
+            For an embedded chart, right-click and choose <strong>Edit Data</strong>. A small
+            spreadsheet opens inside PowerPoint showing the data stored in the deck. Edit it there
+            and the chart updates. This is a copy — changing it does not touch your original Excel
+            file, and vice versa.
+          </p>
+        </li>
+
+        <li>
+          <h3>Break the link before you send or present the deck</h3>
+          <p>
+            This is the step that prevents the most embarrassing failure. In
+            <strong>File → Info → Edit Links to Files</strong>, select the link and click
+            <strong>Break Link</strong>.
+          </p>
+          <p>
+            The chart becomes a static object: it will never update again, and it will never show a
+            broken-link error, on any machine, forever. Do this once the numbers are final — the day
+            before you present, not the morning of.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>When it does not work</h2>
+
+      <ul class="issues">
+        <li>
+          <strong>"The linked file is unavailable" or a red X on the chart</strong>
+          The source Excel workbook has moved, been renamed, or been deleted, so PowerPoint cannot
+          resolve the stored path. Either put the file back where it was, or open
+          <strong>File → Info → Edit Links to Files</strong> and repoint the link to the new
+          location. If you no longer need live updates, <strong>Break Link</strong> and the error
+          disappears permanently.
+        </li>
+        <li>
+          <strong>The chart does not update on a colleague's or a venue's computer</strong>
+          Linked charts need the source Excel file, and that file is not travelling with your
+          .pptx — only a path to it is. Embarrassingly, the path is often local, like
+          <code>C:\Users\you\...</code>, which nobody else can reach. Break the link or use an
+          embedded chart before sharing.
+        </li>
+        <li>
+          <strong>The formatting changes when I paste</strong>
+          You almost certainly pasted without choosing, so PowerPoint applied the destination theme.
+          Undo and re-paste through <strong>Paste Special</strong>, choosing
+          <strong>Keep Source Formatting</strong> to preserve Excel's appearance, or paste as a
+          picture if you want it pixel-identical.
+        </li>
+        <li>
+          <strong>The PowerPoint file has become huge</strong>
+          Embedded Excel objects each carry a copy of the workbook. Several of them, on top of
+          embedded images or video, add up quickly. Use <strong>File → Info → Compress Media</strong>
+          for video, and consider linking rather than embedding charts — or pasting as pictures,
+          which are usually smaller than a whole embedded workbook.
+        </li>
+        <li>
+          <strong>The chart updates but the formatting resets every time</strong>
+          Updating a link re-reads the source chart, including its formatting, which discards
+          formatting you applied in PowerPoint. Format the chart the way you want it
+          <em>in Excel</em>, update the link, and it will come across correctly. Alternatively, break
+          the link once the numbers are final and format it freely in PowerPoint afterwards.
+        </li>
+        <li>
+          <strong>Edit Data opens but shows the wrong numbers</strong>
+          You are editing the copy stored inside the deck, which may be out of date relative to the
+          original spreadsheet. This is expected for embedded objects — if you need the latest, the
+          chart should have been linked instead.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>What is the difference between linking and embedding an Excel chart?</dt>
+        <dd>
+          Linking stores a <em>reference</em> to the Excel file — the chart updates when the file
+          changes, but breaks if the file moves or is missing. Embedding stores a <em>copy</em> of
+          the data inside the PowerPoint file — it always travels with the deck, but does not follow
+          changes to the original spreadsheet.
+        </dd>
+
+        <dt>Why does my chart say the linked file is unavailable?</dt>
+        <dd>
+          The source workbook was moved, renamed or deleted, so the stored path no longer resolves.
+          Restore the file, repoint the link under <strong>File → Info → Edit Links to Files</strong>,
+          or break the link if you no longer need updates.
+        </dd>
+
+        <dt>Will my Excel chart update automatically in PowerPoint?</dt>
+        <dd>
+          Only if it was pasted as a linked object and automatic updating is on. Check
+          <strong>File → Info → Edit Links to Files</strong>. Automatic updates still require the
+          source file to be present and reachable. Embedded charts and pictures never update on
+          their own.
+        </dd>
+
+        <dt>Does embedding an Excel chart increase the PowerPoint file size?</dt>
+        <dd>
+          Yes — embedding stores a copy of the workbook inside the presentation. Linking keeps the
+          file small because only a reference is saved. Pasting as a picture sits in between,
+          depending on resolution.
+        </dd>
+
+        <dt>Can I embed an Excel chart in the PowerPoint web app?</dt>
+        <dd>
+          Only in a limited way. The web app can display an embedded chart created in the desktop
+          app, but Paste Special and the Edit Links to Files dialog are desktop features. Do this
+          work in the desktop applications.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="sources">
+      <h2>Official references</h2>
+      <ul>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/insert-and-update-excel-data-in-powerpoint-0690708a-5ce6-41b4-923f-11d57554138d" rel="noopener">Insert and update Excel data in PowerPoint</a>
+          <span>Linking versus embedding, and how to update the data afterwards.</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/update-or-remove-a-broken-link-to-an-external-file-29485589-816e-4841-81b7-ff90ae5a2cc4" rel="noopener">Update or remove a broken link to an external file</a>
+          <span>The Links dialog behind File → Info → Edit Links to Files, including Update Now, Change Source and Break Link.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Related guides</h2>
+      <div class="related">
+        <a href="/how-to-use-slide-master-in-powerpoint">
+          <span class="related__label">Related</span>
+          <span class="related__title">How to Use Slide Master in PowerPoint</span>
+          <span class="related__desc">Make your pasted charts match the rest of the deck by setting the theme once.</span>
+        </a>
+        <a href="/how-to-make-a-powerpoint-template">
+          <span class="related__label">Related</span>
+          <span class="related__title">How to Make a PowerPoint Template</span>
+          <span class="related__desc">Bake the chart colors into a reusable .potx so every deck matches.</span>
+        </a>
+        <a href="/">
+          <span class="related__label">Start here</span>
+          <span class="related__title">How to Use PowerPoint: the complete beginner's guide</span>
+          <span class="related__desc">The 8-step walkthrough from blank screen to finished deck.</span>
+        </a>
+      </div>
+    </section>
+  </article>
+
+  <div class="wrap">
+    <div class="cta">
+      <h2>The rule that saves presentations</h2>
+      <p>
+        If the numbers are final, <strong>break the link</strong>. A linked chart that cannot find
+        its spreadsheet is a red error box on a projector — and it will happen at the worst possible
+        moment if you leave it to chance.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      <a href="/">How to Use PowerPoint</a> ·
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a> ·
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a> ·
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a> ·
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </p>
+    <p>
+      <a href="/how-to-use-slide-master-in-powerpoint">Slide Master</a> ·
+      <a href="/how-to-embed-an-excel-chart-in-powerpoint">Embed an Excel chart</a> ·
+      <a href="/how-to-make-a-powerpoint-template">Make a template</a>
+    </p>
+    <p>
+      <a href="/how-to-compress-a-powerpoint-file">Compress a file</a> ·
+      <a href="/powerpoint-file-size-checker">File size checker</a> ·
+      <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
+      <a href="/about">About</a>
+    </p>
+    <p>Last updated September 30, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+  </div>
+</footer>
+
+</body>
+</html>

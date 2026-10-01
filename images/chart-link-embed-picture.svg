@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 356" width="720" height="356" role="img">
+  <title>Three ways to get an Excel chart into PowerPoint: pasted as a picture, linked, or embedded</title>
+  <defs>
+    <style>
+      .t    { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .cap  { font-size: 10px; fill: #9a9a92; letter-spacing: 0.10em; }
+      .hd   { font-size: 13.5px; font-weight: 700; fill: #1a1a1a; }
+      .sub  { font-size: 10.5px; fill: #8a8a82; }
+      .yes  { font-size: 11.5px; fill: #2f6f4a; }
+      .no   { font-size: 11.5px; fill: #a8431f; }
+      .tag  { font-size: 11px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="720" height="356" fill="#ffffff"/>
+  <text class="t cap" x="360" y="26" text-anchor="middle">PASTE SPECIAL — CTRL+ALT+V</text>
+  <text class="t sub" x="360" y="46" text-anchor="middle" font-size="12">The choice you make here decides whether the chart updates, and whether it can break.</text>
+
+  <!-- ============ 1. Picture ============ -->
+  <rect x="24" y="64" width="216" height="266" rx="10" fill="#ffffff" stroke="#e3e3df" stroke-width="1.5"/>
+
+  <text class="t hd" x="132" y="92" text-anchor="middle">Paste as Picture</text>
+  <text class="t sub" x="132" y="110" text-anchor="middle">a flat image</text>
+
+  <!-- icon: chart card, unlinked -->
+  <rect x="80" y="126" width="104" height="66" rx="5" fill="#fafaf8" stroke="#d8d8d2"/>
+  <rect x="92" y="164" width="12" height="18" rx="2" fill="#dcdad4"/>
+  <rect x="110" y="152" width="12" height="30" rx="2" fill="#dcdad4"/>
+  <rect x="128" y="142" width="12" height="40" rx="2" fill="#dcdad4"/>
+  <rect x="146" y="156" width="12" height="26" rx="2" fill="#dcdad4"/>
+  <line x1="92" y1="184" x2="172" y2="184" stroke="#d8d8d2"/>
+  <circle cx="184" cy="132" r="14" fill="#ffffff" stroke="#c43e1c" stroke-width="1.8"/>
+  <path d="M178 126 L190 138 M190 126 L178 138" stroke="#c43e1c" stroke-width="1.8" stroke-linecap="round"/>
+
+  <text class="t yes" x="44" y="224">✓  Never breaks</text>
+  <text class="t yes" x="44" y="245">✓  Identical on every machine</text>
+  <text class="t no"  x="44" y="266">✗  Never updates</text>
+
+  <rect x="44" y="288" width="176" height="28" rx="6" fill="#f4f4f1"/>
+  <text class="t tag" x="132" y="306" text-anchor="middle" fill="#5c5c5c">The numbers are final</text>
+
+  <!-- ============ 2. Linked ============ -->
+  <rect x="252" y="64" width="216" height="266" rx="10" fill="#ffffff" stroke="#c43e1c" stroke-width="1.5"/>
+
+  <text class="t hd" x="360" y="92" text-anchor="middle">Linked</text>
+  <text class="t sub" x="360" y="110" text-anchor="middle">a reference to the file</text>
+
+  <!-- icon: excel box, chain, chart box -->
+  <rect x="272" y="130" width="56" height="56" rx="5" fill="#eef6f0" stroke="#bcd8c6"/>
+  <path d="M288 146 l20 0 M288 158 l20 0 M288 170 l20 0" stroke="#7fae90" stroke-width="2"/>
+  <path d="M298 138 l0 44" stroke="#7fae90" stroke-width="2"/>
+
+  <rect x="380" y="130" width="56" height="56" rx="5" fill="#fafaf8" stroke="#d8d8d2"/>
+  <rect x="392" y="162" width="10" height="14" rx="2" fill="#dcdad4"/>
+  <rect x="406" y="152" width="10" height="24" rx="2" fill="#dcdad4"/>
+  <rect x="420" y="158" width="10" height="18" rx="2" fill="#dcdad4"/>
+  <line x1="392" y1="176" x2="430" y2="176" stroke="#d8d8d2"/>
+
+  <!-- chain -->
+  <path d="M334 158 h14 a7 7 0 0 1 0 0 M334 150 h10 a8 8 0 1 1 0 16 h-10" fill="none" stroke="#c43e1c" stroke-width="1.8"/>
+  <path d="M372 158 h-14 M372 150 h-10 a8 8 0 1 0 0 16 h10" fill="none" stroke="#c43e1c" stroke-width="1.8"/>
+  <rect x="342" y="150" width="16" height="16" rx="4" fill="none" stroke="#c43e1c" stroke-width="1.8"/>
+
+  <text class="t yes" x="272" y="224">✓  Updates from Excel</text>
+  <text class="t no"  x="272" y="245">✗  Breaks if the file moves</text>
+  <text class="t no"  x="272" y="266">✗  Needs the file present</text>
+
+  <rect x="272" y="288" width="176" height="28" rx="6" fill="#fdf0ec"/>
+  <text class="t tag" x="360" y="306" text-anchor="middle" fill="#c43e1c">Still building the deck</text>
+
+  <!-- ============ 3. Embedded ============ -->
+  <rect x="480" y="64" width="216" height="266" rx="10" fill="#ffffff" stroke="#e3e3df" stroke-width="1.5"/>
+
+  <text class="t hd" x="588" y="92" text-anchor="middle">Embed Workbook</text>
+  <text class="t sub" x="588" y="110" text-anchor="middle">a copy inside the deck</text>
+
+  <!-- icon: chart card containing a mini grid -->
+  <rect x="536" y="126" width="104" height="66" rx="5" fill="#fafaf8" stroke="#d8d8d2"/>
+  <rect x="546" y="136" width="34" height="24" rx="3" fill="#eef6f0" stroke="#bcd8c6"/>
+  <path d="M546 144 h34 M546 152 h34 M557 136 v24 M568 136 v24" stroke="#bcd8c6" stroke-width="1.2"/>
+  <rect x="590" y="152" width="10" height="26" rx="2" fill="#dcdad4"/>
+  <rect x="604" y="142" width="10" height="36" rx="2" fill="#dcdad4"/>
+  <rect x="618" y="158" width="10" height="20" rx="2" fill="#dcdad4"/>
+  <line x1="590" y1="180" x2="630" y2="180" stroke="#d8d8d2"/>
+
+  <text class="t yes" x="500" y="224">✓  Travels with the deck</text>
+  <text class="t yes" x="500" y="245">✓  Data editable inside it</text>
+  <text class="t no"  x="500" y="266">✗  Does not follow the original</text>
+
+  <rect x="500" y="288" width="176" height="28" rx="6" fill="#f4f4f1"/>
+  <text class="t tag" x="588" y="306" text-anchor="middle" fill="#5c5c5c">Editing inside the deck</text>
+</svg>

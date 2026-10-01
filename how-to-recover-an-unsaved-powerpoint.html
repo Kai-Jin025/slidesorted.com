@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>How to Recover an Unsaved PowerPoint Presentation</title>
+<meta name="description" content="Recover an unsaved PowerPoint file: try File → Info → Manage Presentation → Recover Unsaved Presentations first, then the AutoRecover folder shown in Options → Save, then OneDrive version history. Ordered by what to try first.">
+<link rel="canonical" href="https://slidesorted.com/how-to-recover-an-unsaved-powerpoint">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Recover an Unsaved PowerPoint Presentation">
+<meta property="og:description" content="Where PowerPoint keeps unsaved work, and the order to look in when it has disappeared.">
+<meta property="og:url" content="https://slidesorted.com/how-to-recover-an-unsaved-powerpoint">
+<meta property="og:site_name" content="SlideSorted">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://slidesorted.com/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PowerPoint guides and tools">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "PowerPoint Guides", "item": "https://slidesorted.com/" },
+        { "@type": "ListItem", "position": 2, "name": "How to Recover an Unsaved PowerPoint", "item": "https://slidesorted.com/how-to-recover-an-unsaved-powerpoint" }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Recover an Unsaved PowerPoint Presentation",
+      "description": "Find and reopen a PowerPoint presentation that was closed or crashed before it was saved.",
+      "totalTime": "PT15M",
+      "tool": [{ "@type": "HowToTool", "name": "Microsoft PowerPoint (desktop app)" }],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Try to save from the running app",
+          "text": "If PowerPoint is still open, even in a crashed or unresponsive state, try Ctrl+S (⌘S on Mac) and see whether it offers you a Save As dialog. A presentation that was never given a filename can sometimes still be written to disk this way. If PowerPoint has crashed and offers to recover on restart, accept it and save immediately to a real file."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Check Recover Unsaved Presentations",
+          "text": "Open PowerPoint and go to File → Info → Manage Presentation → Recover Unsaved Presentations. This entry only appears when PowerPoint has detected unsaved files from a previous session, so its absence does not mean there is nothing to find — it means you should go to the next step."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Read your actual AutoRecover folder path",
+          "text": "This is the step most guides get wrong: they hand you a hardcoded path that may not exist on your machine. Go to File → Options → Save and read the AutoRecover file location field. That is the real folder for your installation, so copy it and open it in File Explorer. Typical locations under %APPDATA%\\Microsoft\\PowerPoint\\ or %LOCALAPPDATA%\\Microsoft\\Office\\UnsavedFiles\\ are hints only — the field in Options is the authoritative answer."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Sort that folder by date and open the newest file",
+          "text": "AutoRecover writes on a timer, so there may be several candidates. Sort by Date Modified, newest first, and open the top one in PowerPoint. These files often have a .tmp extension; if PowerPoint refuses to open one, copy it somewhere safe, rename the copy so it ends in .pptx, and try again. Copy before renaming, so the original stays untouched for another attempt."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Check OneDrive or SharePoint version history",
+          "text": "If the presentation was ever saved to OneDrive or SharePoint, even briefly and even under a name you have forgotten, versions of it exist in the cloud. Find the file in File Explorer or the OneDrive web interface, right-click it, and choose Version history to open or restore an earlier version. This is the most reliable recovery route that exists."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Check the Recycle Bin and your recent files",
+          "text": "Two quick checks that cost nothing. Look in the Recycle Bin for a deleted copy, and open File → Open → Recent to see whether the presentation is listed under a name you do not remember choosing."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where does PowerPoint save unsaved files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PowerPoint writes AutoRecover copies to a folder that varies by version and installation. Do not guess the path: open File, then Options, then Save, and read the AutoRecover file location field, which shows the exact folder on your machine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I recover a PowerPoint I never saved once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, if PowerPoint was open long enough to write an AutoRecover copy. AutoRecover works on a timer, so a presentation created and lost within the interval was probably never written to disk. Check File, then Info, then Manage Presentation, then Recover Unsaved Presentations, and the AutoRecover folder."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often does PowerPoint autosave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The default AutoRecover interval is 10 minutes, which is long enough to lose real work. Change it in File, then Options, then Save. Five minutes or less is a reasonable setting if you work on long presentations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does OneDrive keep old versions of PowerPoint files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and this is the most reliable recovery route. Files saved to OneDrive or SharePoint keep version history, so you can restore an earlier state even after a bad edit. It works for saved files only — it cannot help with a presentation that was never saved at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Recover Unsaved Presentations not showing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That menu entry only appears when PowerPoint has detected unsaved files from a previous session. If it is missing, go directly to the AutoRecover file location shown in File, then Options, then Save, and look there instead."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="site__inner">
+    <a class="brand" href="/">Slide<span>Sorted</span></a>
+    <nav class="site-nav" aria-label="Guides">
+      <a href="/">Full guide</a>
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a>
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a>
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a>
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs wrap" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">PowerPoint Guides</a></li>
+    <li aria-current="page">Recover an Unsaved Presentation</li>
+  </ol>
+</nav>
+
+<main id="main">
+
+  <div class="wrap hero">
+    <span class="eyebrow">Fix it now</span>
+    <h1>How to Recover an Unsaved PowerPoint Presentation</h1>
+    <p class="byline">Updated <time datetime="2026-09-30">September 30, 2026</time> · 6 minute read · <a href="/about">How these guides are written</a></p>
+  </div>
+
+  <article class="wrap">
+    <div class="answer">
+      <p>
+        <strong>To recover an unsaved PowerPoint:</strong> first check
+        <strong>File → Info → Manage Presentation → Recover Unsaved Presentations</strong>. If that
+        is empty or missing, open <strong>File → Options → Save</strong> and read the
+        <strong>AutoRecover file location</strong> field — that shows your actual folder, which
+        varies by version. Then sort that folder by date and open the newest file.
+      </p>
+    </div>
+
+    <p>
+      Work through this in order. The steps are arranged by how likely they are to work and how
+      fast they are, not by how technical they sound — so if step one succeeds you can stop reading.
+    </p>
+
+    <section class="answer" style="margin-top:24px">
+      <p>
+        <strong>Before anything else:</strong> if PowerPoint is still open, <em>do not close it,
+        do not end the task, and do not restart the computer.</em> An unsaved presentation that is
+        still in memory can often be saved from where it sits. Every remaining step on this page is
+        harder than that one.
+      </p>
+    </section>
+
+    <section>
+      <h2>Where to look, in order</h2>
+      <ol class="steps">
+        <li>
+          <h3>Try to save from the running app</h3>
+          <p>
+            If PowerPoint is still open — even in a crashed or unresponsive state — try
+            <span class="keys">Ctrl+S</span> (<span class="keys">⌘S</span> on Mac) and see whether it offers you a Save As dialog. A
+            presentation that was never given a filename can sometimes still be written to disk this
+            way.
+          </p>
+          <p>
+            If PowerPoint has crashed and offers to recover on restart, <strong>accept it</strong>
+            and save immediately to a real file before doing anything else.
+          </p>
+        </li>
+
+        <li>
+          <h3>Check Recover Unsaved Presentations</h3>
+          <p>
+            Open PowerPoint and go to
+            <strong>File → Info → Manage Presentation → Recover Unsaved Presentations</strong>.
+          </p>
+          <p>
+            This entry only appears when PowerPoint has detected unsaved files from a previous
+            session, so its absence does not mean there is nothing to find — it means you should go
+            to the next step. When it does appear, it opens a folder containing the recovered files.
+          </p>
+        </li>
+
+        <li>
+          <h3>Read your actual AutoRecover folder path</h3>
+          <p>
+            This is the step most guides get wrong: they hand you a hardcoded path that may not
+            exist on your machine. Instead, ask PowerPoint where it is actually writing.
+          </p>
+          <p>
+            Go to <strong>File → Options → Save</strong> and read the
+            <strong>AutoRecover file location</strong> field. That is the real folder for your
+            installation — copy it and open it in File Explorer.
+          </p>
+          <p class="tip">
+            <strong>Typical locations, for reference only:</strong> on Windows it is usually
+            somewhere under <code>%APPDATA%\Microsoft\PowerPoint\</code>, and unsaved drafts
+            sometimes appear under
+            <code>%LOCALAPPDATA%\Microsoft\Office\UnsavedFiles\</code>. Treat these as hints — the
+            field in Options is the authoritative answer.
+          </p>
+        </li>
+
+        <li>
+          <h3>Sort that folder by date and open the newest file</h3>
+          <p>
+            AutoRecover writes on a timer, so there may be several candidates. Sort by
+            <strong>Date Modified</strong>, newest first, and open the top one in PowerPoint.
+          </p>
+          <p>
+            These files often have a <code>.tmp</code> extension. If PowerPoint refuses to open one,
+            copy it somewhere safe, rename the copy so it ends in <code>.pptx</code>, and try again.
+          </p>
+          <p class="tip">
+            <strong>Copy before renaming.</strong> If the file turns out not to be recoverable you
+            have lost nothing, and you keep the original untouched for another attempt.
+          </p>
+        </li>
+
+        <li>
+          <h3>Check OneDrive or SharePoint version history</h3>
+          <p>
+            If the presentation was <em>ever</em> saved to OneDrive or SharePoint — even briefly, even
+            under a name you have forgotten — then versions of it exist in the cloud.
+          </p>
+          <p>
+            Find the file in File Explorer or in the OneDrive web interface, right-click it, and
+            choose <strong>Version history</strong>. You can open or restore any earlier version.
+          </p>
+          <p>
+            This is the most reliable recovery route that exists, which is why the prevention advice
+            at the bottom of this page amounts to "save to OneDrive."
+          </p>
+        </li>
+
+        <li>
+          <h3>Check the Recycle Bin and your recent files</h3>
+          <p>
+            Two quick checks that cost nothing. Look in the <strong>Recycle Bin</strong> for a
+            deleted copy, and open <strong>File → Open → Recent</strong> to see whether the
+            presentation is listed under a name you do not remember choosing.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <figure>
+      <img src="images/recover-decision-path.svg"
+           alt="Decision path for recovering an unsaved PowerPoint, ordered from most likely to work: the running app, Recover Unsaved Presentations, the AutoRecover folder, changing the file extension, OneDrive version history, and the Recycle Bin"
+           width="720" height="392" loading="lazy" decoding="async">
+      <figcaption>
+        <b>Go in this order.</b> The top of the list is fast and often works; the bottom is a
+        last resort. Stop as soon as you have your file back.
+      </figcaption>
+    </figure>
+
+    <section>
+      <h2>Why the file might not be recoverable</h2>
+      <p>
+        It is worth knowing the limits, so you can tell quickly whether to keep searching or start
+        again.
+      </p>
+      <ul class="issues">
+        <li>
+          <strong>AutoRecover works on a timer, not continuously</strong>
+          PowerPoint writes a recovery copy every few minutes. A presentation that was created and
+          lost inside that window was probably never written to disk at all — there is nothing to
+          find.
+        </li>
+        <li>
+          <strong>It only helps if the app had time to notice</strong>
+          A power cut or a hard crash can take the recovery file with it. This is exactly the case
+          where cloud version history saves you, provided the file had been saved once.
+        </li>
+        <li>
+          <strong>Renaming a .tmp file does not always work</strong>
+          Sometimes the recovery file is a partial write and simply is not a valid presentation.
+          Try it, but do not spend an hour on it — move on to the OneDrive check.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Make sure it does not happen again</h2>
+      <p class="section__intro">
+        Two settings, about sixty seconds of work, and you never have to read this page again.
+      </p>
+      <ul class="plain">
+        <li>
+          <strong>Shorten the AutoRecover interval</strong>
+          <strong>File → Options → Save</strong>, and set
+          <strong>Save AutoRecover information every</strong> to <strong>5 minutes</strong> or less.
+          The default is 10, which is long enough to lose real work.
+        </li>
+        <li>
+          <strong>Keep the last version if you close without saving</strong>
+          On the same settings screen, tick
+          <strong>Keep the last AutoRecovered version if I close without saving</strong>. This is
+          what catches the "I hit Don't Save by reflex" accident, which is the single most common
+          way people lose a presentation.
+        </li>
+        <li>
+          <strong>Save to OneDrive by default</strong>
+          <strong>File → Options → Save</strong>, and tick
+          <strong>Save to Computer by default</strong> only if you have a reason to. Left on
+          OneDrive, every save becomes a recoverable version — which turns this entire page into a
+          non-issue.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>Where does PowerPoint save unsaved files?</dt>
+        <dd>
+          To the folder shown in <strong>File → Options → Save</strong> under
+          <em>AutoRecover file location</em>. Do not rely on a path from a guide — including this
+          one — because the folder differs between versions and installations. Read it from Options
+          and you have the right answer for your machine.
+        </dd>
+
+        <dt>Can I recover a PowerPoint I never saved once?</dt>
+        <dd>
+          Sometimes, if the app stayed open long enough to write an AutoRecover copy. AutoRecover
+          runs on a timer, so a presentation created and lost within that interval was likely never
+          written to disk. Check <strong>Recover Unsaved Presentations</strong> and the AutoRecover
+          folder regardless — it costs nothing to look.
+        </dd>
+
+        <dt>How often does PowerPoint autosave?</dt>
+        <dd>
+          Every 10 minutes by default. Change it in <strong>File → Options → Save</strong>; five
+          minutes or less is sensible for long presentations.
+        </dd>
+
+        <dt>Does OneDrive keep old versions of PowerPoint files?</dt>
+        <dd>
+          Yes, and it is the most dependable recovery method available. Files saved to OneDrive or
+          SharePoint keep version history you can browse and restore. It only applies to files that
+          were saved at least once.
+        </dd>
+
+        <dt>Why is Recover Unsaved Presentations not showing?</dt>
+        <dd>
+          That menu entry appears only when PowerPoint has detected unsaved files from a previous
+          session. If it is missing, go straight to the AutoRecover file location from
+          <strong>File → Options → Save</strong> and search there instead.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="sources">
+      <h2>Official references</h2>
+      <ul>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/collab-files/recover-your-microsoft-365-files" rel="noopener">Recover your Microsoft 365 files</a>
+          <span>AutoRecover, and where Microsoft 365 keeps files you never saved.</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/recover-an-earlier-version-of-an-office-file-169cb166-e7e2-438e-8f39-9a8927828121" rel="noopener">Recover an earlier version of an Office file</a>
+          <span>Restoring a previous version from inside the file.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Related guides</h2>
+      <div class="related">
+        <a href="/">
+          <span class="related__label">Start here</span>
+          <span class="related__title">How to Use PowerPoint: the complete beginner's guide</span>
+          <span class="related__desc">Including how to save, export and protect a deck once you have it back.</span>
+        </a>
+        <a href="/how-to-make-a-powerpoint-template">
+          <span class="related__label">Prevention</span>
+          <span class="related__title">How to Make a PowerPoint Template</span>
+          <span class="related__desc">Templates are stored files — they survive a crash that a scratch deck does not.</span>
+        </a>
+        <a href="/how-to-compress-a-powerpoint-file">
+          <span class="related__label">Related</span>
+          <span class="related__title">How to Compress a PowerPoint File</span>
+          <span class="related__desc">Once you have recovered it, here is how to make it small enough to send.</span>
+        </a>
+      </div>
+    </section>
+  </article>
+
+  <div class="wrap">
+    <div class="cta">
+      <h2>The sixty-second fix that prevents all of this</h2>
+      <p>
+        Set AutoRecover to five minutes and tick <em>Keep the last AutoRecovered version if I close
+        without saving</em>. That second checkbox is what catches the reflex "Don't Save" click —
+        the most common way people lose work, and the only one that has nothing to do with crashes.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      <a href="/">How to Use PowerPoint</a> ·
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a> ·
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a> ·
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a> ·
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </p>
+    <p>
+      <a href="/how-to-use-slide-master-in-powerpoint">Slide Master</a> ·
+      <a href="/how-to-embed-an-excel-chart-in-powerpoint">Embed an Excel chart</a> ·
+      <a href="/how-to-make-a-powerpoint-template">Make a template</a>
+    </p>
+    <p>
+      <a href="/how-to-compress-a-powerpoint-file">Compress a file</a> ·
+      <a href="/powerpoint-file-size-checker">File size checker</a> ·
+      <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
+      <a href="/about">About</a>
+    </p>
+    <p>Last updated September 30, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+  </div>
+</footer>
+
+</body>
+</html>

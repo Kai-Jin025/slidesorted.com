@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>PowerPoint File Size Checker: See What Is Making Your Deck Big</title>
+<meta name="description" content="Drop a .pptx and see exactly which files inside it are taking up the space, sorted by size. Runs entirely in your browser — the file is never uploaded.">
+<link rel="canonical" href="https://slidesorted.com/powerpoint-file-size-checker">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PowerPoint File Size Checker">
+<meta property="og:description" content="See which files inside a .pptx are taking up the space. Runs in your browser; the file is never uploaded.">
+<meta property="og:url" content="https://slidesorted.com/powerpoint-file-size-checker">
+<meta property="og:site_name" content="SlideSorted">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://slidesorted.com/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PowerPoint guides and tools">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://slidesorted.com/powerpoint-file-size-checker",
+      "url": "https://slidesorted.com/powerpoint-file-size-checker",
+      "name": "PowerPoint File Size Checker",
+      "description": "Reads the internal structure of a .pptx file in the browser and reports which embedded media files are responsible for its size.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any — runs in a web browser",
+      "browserRequirements": "Requires JavaScript",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Lists every image, audio and video file stored inside a .pptx",
+        "Sorts them by size and shows each one as a percentage of the file",
+        "Separates embedded workbooks and embedded fonts from media",
+        "No upload: the file is read locally and never leaves the device"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "PowerPoint Guides", "item": "https://slidesorted.com/" },
+        { "@type": "ListItem", "position": 2, "name": "PowerPoint File Size Checker", "item": "https://slidesorted.com/powerpoint-file-size-checker" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is my file uploaded anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The file is opened and read by JavaScript running in your own browser, and nothing is sent over the network. There is no server component to this tool, so there is nowhere for the file to go. You can confirm it by disconnecting from the internet and using the tool — it still works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the tool not need to open the file in PowerPoint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A .pptx is a ZIP archive. The ZIP index at the end of the archive records the size of every file inside it, so the tool can report accurate sizes by reading that index alone. It never decompresses anything, which is why it is instant even on a large deck."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I check the same thing without a tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Copy the .pptx, rename the copy so it ends in .zip, and open it. The ppt/media folder holds every image, audio and video file the deck contains. Sorting that folder by size tells you the same thing this tool does, a little more slowly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The report says media is only a small part of my file. What else is in there?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Embedded Excel workbooks and embedded fonts are the two common non-media causes. A deck that has been saved repeatedly for years can also accumulate editing history. The report's non-media table lists every part over 1% of the file, which in practice names the cause; a part too small to clear that bar is also too small to be worth chasing. Using File → Save As to write a fresh copy under a new name resolves the last of the three."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this work on a .ppt file or a .potx template?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It works on .potx, because a template is built the same way as a .pptx. It does not work on the older .ppt format, which is a binary file rather than an archive — open that in PowerPoint and save it as .pptx first."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="site__inner">
+    <a class="brand" href="/">Slide<span>Sorted</span></a>
+    <nav class="site-nav" aria-label="Guides">
+      <a href="/">Full guide</a>
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a>
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a>
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a>
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs wrap" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">PowerPoint Guides</a></li>
+    <li aria-current="page">File Size Checker</li>
+  </ol>
+</nav>
+
+<main id="main">
+
+  <div class="wrap hero">
+    <span class="eyebrow">Free tool</span>
+    <h1>PowerPoint File Size Checker</h1>
+    <p class="byline">
+      Drop in a .pptx and see which files inside it are taking up the space ·
+      <a href="/about">How these guides are written</a>
+    </p>
+  </div>
+
+  <article class="wrap">
+
+    <div class="answer">
+      <p>
+        <strong>This tool opens a .pptx in your browser and lists every image, audio and video file
+        stored inside it, largest first, with each one as a percentage of the whole file.</strong>
+        It tells you whether the size is coming from video, from pictures, from an embedded
+        workbook, or from none of those — which is the one thing you need to know before deciding
+        how to shrink it. The file is read on your own machine and is never uploaded.
+      </p>
+    </div>
+
+  </article>
+
+  <!-- ================= TOOL ================= -->
+  <div class="wrap wrap--wide">
+    <section class="tool" aria-labelledby="tool-heading">
+      <h2 id="tool-heading" class="sr-only">Check a file</h2>
+
+      <div id="tool-input">
+        <div id="drop" class="drop" role="button" tabindex="0"
+             aria-label="Choose a PowerPoint file to check, or drop one here">
+          <span class="drop__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor"
+                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 16V4M7 9l5-5 5 5"></path>
+              <path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"></path>
+            </svg>
+          </span>
+          <strong class="drop__title">Drop a .pptx here</strong>
+          <span class="drop__hint">or click to choose a file — .pptx and .potx, up to 400&nbsp;MB</span>
+          <span class="drop__privacy">Read in your browser. Nothing is uploaded.</span>
+          <input type="file" id="picker" accept=".pptx,.potx,application/vnd.openxmlformats-officedocument.presentationml.presentation" hidden>
+        </div>
+      </div>
+
+      <p id="tool-error" class="tool-error" role="alert" hidden></p>
+
+      <div id="tool-output" hidden>
+        <div class="tool-bar">
+          <div>
+            <strong id="file-name" class="tool-file"></strong>
+            <span id="file-meta" class="tool-meta"></span>
+          </div>
+          <button type="button" id="reset" class="btn-plain">Check another file</button>
+        </div>
+
+        <div id="stats" class="stats"></div>
+        <div id="verdict" class="verdicts"></div>
+
+        <h3 class="tool-h3">Where the space goes</h3>
+        <div id="breakdown" class="breakdown"></div>
+
+        <div id="files-block">
+          <h3 class="tool-h3">Every media file, largest first</h3>
+          <div class="table-scroll">
+            <table id="files" class="files">
+              <thead>
+                <tr>
+                  <th scope="col">File inside the .pptx</th>
+                  <th scope="col">Type</th>
+                  <th scope="col" class="num">Size</th>
+                  <th scope="col" class="num">Of the file</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="others-block">
+          <h3 class="tool-h3">Non-media parts worth knowing about</h3>
+          <div class="table-scroll">
+            <table id="others" class="files">
+              <thead>
+                <tr>
+                  <th scope="col">Part</th>
+                  <th scope="col" class="num">Size</th>
+                  <th scope="col" class="num">Of the file</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= EXPLANATION ================= -->
+  <article class="wrap">
+
+    <section>
+      <h2>What the numbers mean</h2>
+      <p>
+        A .pptx is a ZIP archive with a folder structure inside it. Almost everything in that
+        structure is small XML describing where shapes sit and what they say — the kind of data
+        that compresses to almost nothing. The bytes that actually make a file large live in one
+        place, <code>ppt/media/</code>, which holds a separate copy of every picture, sound clip
+        and video the deck uses.
+      </p>
+      <p>
+        That has a consequence worth stating plainly: <strong>the size of a .pptx is almost
+        entirely decided by what you put in it, not by how you saved it.</strong> A deck carrying
+        a three-minute 1080p screen recording is large before PowerPoint has done anything wrong,
+        and no amount of saving will change that. The report above exists to tell you which of
+        those situations you are in.
+      </p>
+
+      <h3>Reading the three totals</h3>
+      <ul class="plain">
+        <li>
+          <strong>Whole file</strong> is the size on disk — the number Windows or Finder shows you.
+        </li>
+        <li>
+          <strong>Media folder</strong> is everything under <code>ppt/media/</code>. If this is
+          most of the file, shrinking the deck means shrinking media, and the rest of this page
+          applies.
+        </li>
+        <li>
+          <strong>Everything else</strong> is slides, layout XML, theme data, embedded objects and
+          archive overhead. This is normally small. When it is not, the cause is nearly always an
+          embedded workbook, an embedded font, or years of accumulated editing history — the
+          non-media table in the report names which.
+        </li>
+      </ul>
+
+      <div class="tip">
+        <p>
+          Percentages are calculated against the whole file, so they are the share of the download
+          each item is responsible for. A single video at 78% is not a subtle problem.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>If media is the problem</h2>
+      <p>
+        The report tells you which kind of media dominates, and the fix differs by kind.
+      </p>
+
+      <h3>Video and audio</h3>
+      <p>
+        Video is the single most common reason a deck becomes unshareable, and it is the hardest
+        to fix after the fact. In PowerPoint for Windows,
+        <strong>File → Info → Compress Media</strong> re-encodes every clip and offers three
+        quality levels. Choosing <em>720p</em> rather than the default usually takes a deck from
+        hundreds of megabytes to tens.
+      </p>
+      <p>
+        PowerPoint for Mac has no equivalent feature, so on a Mac the clip has to be re-encoded
+        before it is inserted — the file you link or embed is the file that ends up in the deck.
+        Compressing video also strips embedded captions and any secondary audio tracks, which is
+        worth knowing before you overwrite your only copy.
+      </p>
+
+      <h3>Pictures</h3>
+      <p>
+        Pictures are easier. Select any image and use
+        <strong>Picture Format → Compress Pictures</strong>. Two settings in that dialog do most
+        of the work: untick <em>Apply only to this picture</em> so the setting covers the whole
+        deck, and tick <em>Delete cropped areas of pictures</em>. That second box matters more than
+        it looks — PowerPoint keeps the parts of an image you cropped away, and a deck built from
+        screenshots can lose a third of its size to pixels nobody can see.
+      </p>
+      <p>
+        The full procedure, including what each quality setting costs you in visible detail, is in
+        <a href="/how-to-compress-a-powerpoint-file">how to compress a PowerPoint file</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>If media is not the problem</h2>
+      <p>
+        A report showing a small media folder and a large file is unusual, and it narrows the cause
+        to three things.
+      </p>
+      <ul class="issues">
+        <li>
+          <strong>An embedded Excel workbook.</strong> Pasting a chart as an Excel object puts a
+          copy of the entire spreadsheet inside the .pptx, including sheets nobody will ever see.
+          Pasting it as a picture, or linking it instead, removes that copy. See
+          <a href="/how-to-embed-an-excel-chart-in-powerpoint">embedding an Excel chart</a> for
+          the difference between the two.
+        </li>
+        <li>
+          <strong>Embedded fonts.</strong> File → Options → Save has a setting that embeds the
+          fonts used in the deck so it renders correctly on machines that lack them. Useful with an
+          unusual typeface, pure overhead with a standard one.
+        </li>
+        <li>
+          <strong>Accumulated editing history.</strong> A file saved over and over for years
+          carries residue from every one of those saves. Opening it and using
+          <em>File → Save As</em> to write a fresh copy under a new name discards it. This is also
+          the first thing to try on a file that is slow to open rather than merely large.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Doing this without a tool</h2>
+      <p>
+        Everything this page reports can be checked by hand, and it is worth knowing how — it works
+        on a locked-down machine where you cannot run anything, and it is the same trick that makes
+        the tool possible.
+      </p>
+      <ol class="steps">
+        <li>
+          <strong>Work on a copy.</strong> Renaming a .pptx to .zip and back is harmless, but
+          there is no reason to do it to your only copy.
+        </li>
+        <li>
+          <strong>Rename the copy so it ends in <code>.zip</code>.</strong> Windows will warn you
+          that changing the extension may make the file unusable. It will not, provided you change
+          it back afterwards.
+        </li>
+        <li>
+          <strong>Open the .zip and look inside <code>ppt/media/</code>.</strong> Sort that folder
+          by size. The largest file in it is what is making your deck large.
+        </li>
+        <li>
+          <strong>Rename it back to <code>.pptx</code></strong> when you are done looking. Do not
+          edit anything inside the archive — PowerPoint will refuse to open a file whose internal
+          structure has been altered.
+        </li>
+      </ol>
+      <div class="tip">
+        <p>
+          This is also the answer to a related question: if someone sends you a .pptx and you want
+          to know what is in it before opening it, the archive will tell you. Slides are in
+          <code>ppt/slides/</code>, notes in <code>ppt/notesSlides/</code>, and every embedded
+          asset is visible by name in <code>ppt/media/</code>.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why this runs in the browser</h2>
+      <p>
+        Decks are frequently confidential — a pitch, a handover, an internal review. Uploading one
+        to a stranger's server to find out why it is large is a bad trade, so this tool does not
+        ask you to. There is no upload step because there is no server: the page reads the archive
+        structure directly using JavaScript in your own browser, and the file never crosses the
+        network.
+      </p>
+      <p>
+        You do not have to take that on trust. Disconnect from the internet and use the tool — it
+        behaves identically, which is not true of a tool that uploads your file and analyses it
+        remotely.
+      </p>
+      <p>
+        The parsing is deliberately shallow for the same reason. The tool reads the ZIP index and
+        reports the sizes recorded there; it never decompresses the contents, never renders an
+        embedded image, and never executes anything from the file. A corrupt or hostile .pptx can
+        at worst produce a wrong number.
+      </p>
+    </section>
+
+    <section class="faq">
+      <h2>Questions</h2>
+      <dl>
+        <dt>Is my file uploaded anywhere?</dt>
+        <dd>
+          No. JavaScript in your browser reads the file locally and nothing is sent over the
+          network. There is no server side to this tool, so there is nowhere for the file to go.
+          Disconnecting from the internet and using it anyway is the proof.
+        </dd>
+
+        <dt>Why can it report sizes without opening the file in PowerPoint?</dt>
+        <dd>
+          Because a .pptx is a ZIP archive, and a ZIP archive keeps an index at the end recording
+          the size of every file it contains. Reading that index is enough to produce accurate
+          numbers. Nothing is decompressed, which is why the result appears instantly even for a
+          file of several hundred megabytes.
+        </dd>
+
+        <dt>Can I check the same thing without a tool?</dt>
+        <dd>
+          Yes — copy the file, rename the copy to end in .zip, and open it. The
+          <code>ppt/media/</code> folder is the answer. See
+          <a href="#main">doing this without a tool</a> above for the full procedure, including why
+          you should not edit anything inside the archive.
+        </dd>
+
+        <dt>The report says media is a small part of my file. What else is in there?</dt>
+        <dd>
+          An embedded Excel workbook and embedded fonts are the two common causes; a file saved
+          repeatedly over years can also carry editing history. The non-media table lists every
+          part over 1% of the file, which in practice names the cause — a part too small to clear
+          that bar is also too small to be worth chasing. <em>File → Save As</em> under a new name
+          clears the last of the three.
+        </dd>
+
+        <dt>Does it work on .ppt files or .potx templates?</dt>
+        <dd>
+          It works on .potx, because a template is built exactly the same way as a .pptx. It does
+          not work on the older .ppt format, which is a binary file rather than an archive — open
+          that in PowerPoint and save it as .pptx first.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="sources">
+      <h2>Official references</h2>
+      <ul>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/reduce-the-file-size-of-your-powerpoint-presentations-9548ffd4-d853-41e7-8e40-b606bca036b4" rel="noopener">Reduce the file size of your PowerPoint presentations</a>
+          <span>Microsoft's own guide to Compress Media, Compress Pictures and the settings each offers</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535" rel="noopener">Reduce the file size of a picture in Microsoft Office</a>
+          <span>Why cropped areas are retained in the file, and the checkbox that discards them</span>
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- ================= RELATED ================= -->
+  <section class="wrap">
+    <h2>Related guides</h2>
+    <div class="related">
+      <a href="/how-to-compress-a-powerpoint-file">
+        <span class="related__label">Next step</span>
+        <span class="related__title">Compress a PowerPoint File</span>
+        <span class="related__desc">What to do once you know media is the problem — every setting, and what each one costs you in visible quality.</span>
+      </a>
+      <a href="/how-to-insert-a-video-in-powerpoint">
+        <span class="related__label">Cause</span>
+        <span class="related__title">How to Insert a Video in PowerPoint</span>
+        <span class="related__desc">Getting a clip into a deck without doubling its size, and which formats actually play.</span>
+      </a>
+      <a href="/how-to-embed-an-excel-chart-in-powerpoint">
+        <span class="related__label">Cause</span>
+        <span class="related__title">How to Embed an Excel Chart</span>
+        <span class="related__desc">Why embedding carries a copy of the whole workbook, and the alternative that does not.</span>
+      </a>
+      <a href="/how-to-recover-an-unsaved-powerpoint">
+        <span class="related__label">Related</span>
+        <span class="related__title">How to Recover an Unsaved PowerPoint</span>
+        <span class="related__desc">For the other half of the same bad afternoon — the file closed before you saved it.</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cta">
+      <h2>Know what is in the file first</h2>
+      <p>
+        Guessing at what made a deck large wastes an afternoon. The report takes a second and
+        tells you which of the four causes you are dealing with.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      <a href="/">How to Use PowerPoint</a> ·
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a> ·
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a> ·
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a> ·
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </p>
+    <p>
+      <a href="/how-to-use-slide-master-in-powerpoint">Slide Master</a> ·
+      <a href="/how-to-embed-an-excel-chart-in-powerpoint">Embed an Excel chart</a> ·
+      <a href="/how-to-make-a-powerpoint-template">Make a template</a>
+    </p>
+    <p>
+      <a href="/how-to-compress-a-powerpoint-file">Compress a file</a> ·
+      <a href="/powerpoint-file-size-checker">File size checker</a> ·
+      <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
+      <a href="/about">About</a>
+    </p>
+    <p>Last updated October 1, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+  </div>
+</footer>
+
+<script src="pptx-inspector.js" defer></script>
+
+</body>
+</html>

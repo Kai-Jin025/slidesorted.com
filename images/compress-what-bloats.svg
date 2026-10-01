@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 376" width="720" height="376" role="img">
+  <title>What makes a PowerPoint file large, ranked, with the tool that fixes each cause</title>
+  <defs>
+    <style>
+      .t    { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .cap  { font-size: 10px; fill: #9a9a92; letter-spacing: 0.10em; }
+      .colh { font-size: 10px; fill: #9a9a92; letter-spacing: 0.08em; }
+      .cause{ font-size: 13px; font-weight: 600; fill: #1a1a1a; }
+      .sub  { font-size: 10.5px; fill: #8a8a82; }
+      .fix  { font-size: 11.5px; fill: #a3553a; }
+    </style>
+  </defs>
+
+  <rect width="720" height="376" fill="#ffffff"/>
+  <text class="t cap" x="360" y="24" text-anchor="middle">DIAGNOSE FIRST</text>
+  <text class="t sub" x="360" y="44" text-anchor="middle" font-size="11.5">Each cause has its own tool — using the wrong one saves you nothing.</text>
+
+  <!-- column headers -->
+  <text class="t colh" x="24" y="72">WHAT IS MAKING IT BIG</text>
+  <text class="t colh" x="292" y="72">TYPICAL SIZE</text>
+  <text class="t colh" x="486" y="72">FIX IT WITH</text>
+  <line x1="24" y1="80" x2="696" y2="80" stroke="#e3e3df"/>
+
+  <!-- row 1: video -->
+  <rect x="24" y="94" width="672" height="48" rx="6" fill="#fdf0ec"/>
+  <text class="t cause" x="38" y="115">Embedded video</text>
+  <text class="t sub"   x="38" y="131">stored inside the .pptx at full quality</text>
+  <rect x="292" y="112" width="170" height="12" rx="6" fill="#f0ded4"/>
+  <rect x="292" y="112" width="164" height="12" rx="6" fill="#c43e1c"/>
+  <text class="t fix" x="486" y="115">File → Info → Compress Media</text>
+  <text class="t sub" x="486" y="131">1080p / 720p / 480p — Windows only</text>
+
+  <!-- row 2: images -->
+  <rect x="24" y="150" width="672" height="48" rx="6" fill="#fbfbf9"/>
+  <text class="t cause" x="38" y="171">High-resolution images</text>
+  <text class="t sub"   x="38" y="187">photos straight from a camera or phone</text>
+  <rect x="292" y="168" width="170" height="12" rx="6" fill="#e8e6e1"/>
+  <rect x="292" y="168" width="122" height="12" rx="6" fill="#d9784f"/>
+  <text class="t fix" x="486" y="171">Picture Format → Compress Pictures</text>
+  <text class="t sub" x="486" y="187">150 ppi, apply to all pictures</text>
+
+  <!-- row 3: cropped -->
+  <rect x="24" y="206" width="672" height="48" rx="6" fill="#fbfbf9"/>
+  <text class="t cause" x="38" y="227">Cropped areas still stored</text>
+  <text class="t sub"   x="38" y="243">cropping hides pixels, it does not delete them</text>
+  <rect x="292" y="224" width="170" height="12" rx="6" fill="#e8e6e1"/>
+  <rect x="292" y="224" width="86" height="12" rx="6" fill="#e0a184"/>
+  <text class="t fix" x="486" y="227">Tick &#8220;Delete cropped areas&#8221;</text>
+  <text class="t sub" x="486" y="243">inside the same dialog</text>
+
+  <!-- row 4: excel -->
+  <rect x="24" y="262" width="672" height="48" rx="6" fill="#fbfbf9"/>
+  <text class="t cause" x="38" y="283">Embedded Excel workbooks</text>
+  <text class="t sub"   x="38" y="299">a copy of the whole spreadsheet travels along</text>
+  <rect x="292" y="280" width="170" height="12" rx="6" fill="#e8e6e1"/>
+  <rect x="292" y="280" width="62" height="12" rx="6" fill="#e6bda9"/>
+  <text class="t fix" x="486" y="283">Link it, or paste as a picture</text>
+  <text class="t sub" x="486" y="299">see the Excel chart guide</text>
+
+  <!-- row 5: fonts -->
+  <rect x="24" y="318" width="672" height="48" rx="6" fill="#fbfbf9"/>
+  <text class="t cause" x="38" y="339">Embedded fonts</text>
+  <text class="t sub"   x="38" y="355">entire font files stored inside the deck</text>
+  <rect x="292" y="336" width="170" height="12" rx="6" fill="#e8e6e1"/>
+  <rect x="292" y="336" width="38" height="12" rx="6" fill="#ecd6cb"/>
+  <text class="t fix" x="486" y="339">File → Options → Save</text>
+  <text class="t sub" x="486" y="355">untick &#8220;Embed fonts in the file&#8221;</text>
+</svg>

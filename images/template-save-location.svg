@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" role="img">
+  <title>A .potx template must be saved in the Custom Office Templates folder to appear under File, New, Personal</title>
+  <defs>
+    <style>
+      .t    { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .cap  { font-size: 10px; fill: #9a9a92; letter-spacing: 0.10em; }
+      .fold { font-size: 13px; fill: #3a3a36; }
+      .file { font-size: 13px; font-weight: 700; fill: #c43e1c; }
+      .tiny { font-size: 10px; fill: #8a8a82; }
+      .tab  { font-size: 11px; fill: #8a8a82; }
+      .tabon{ font-size: 11px; font-weight: 700; fill: #c43e1c; }
+      .warn { font-size: 12.5px; fill: #7a3a22; }
+    </style>
+  </defs>
+
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text class="t cap" x="360" y="26" text-anchor="middle">SAVE AS → POWERPOINT TEMPLATE (*.POTX)</text>
+
+  <!-- ============ folder tree ============ -->
+  <rect x="24" y="56" width="342" height="188" rx="10" fill="#fbfbf9" stroke="#e3e3df" stroke-width="1.5"/>
+
+  <!-- Documents -->
+  <path d="M44 84 h14 l4 5 h14 v16 a2 2 0 0 1 -2 2 h-30 a2 2 0 0 1 -2 -2 z" fill="#e4e2dc"/>
+  <text class="t fold" x="84" y="102">Documents</text>
+
+  <!-- indent line -->
+  <path d="M56 118 v18" stroke="#d8d8d2" stroke-width="1.4"/>
+
+  <!-- Custom Office Templates -->
+  <path d="M64 126 h14 l4 5 h14 v16 a2 2 0 0 1 -2 2 h-30 a2 2 0 0 1 -2 -2 z" fill="#e4e2dc"/>
+  <text class="t fold" x="104" y="144">Custom Office Templates</text>
+
+  <path d="M76 160 v18" stroke="#d8d8d2" stroke-width="1.4"/>
+
+  <!-- the file -->
+  <rect x="84" y="172" width="14" height="18" rx="2" fill="#c43e1c"/>
+  <path d="M90 172 l8 8 h-8 z" fill="#ffffff" opacity="0.45"/>
+  <text class="t file" x="108" y="186">MyBrand.potx</text>
+
+  <text class="t tiny" x="108" y="206">Windows: Documents\Custom Office Templates</text>
+  <text class="t tiny" x="108" y="222">Mac: Group Containers / User Content / Templates</text>
+
+  <!-- arrow -->
+  <path d="M378 150 h20 M390 143 l8 7 l-8 7" fill="none" stroke="#c43e1c" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- ============ New gallery ============ -->
+  <rect x="410" y="56" width="286" height="188" rx="10" fill="#ffffff" stroke="#e3e3df" stroke-width="1.5"/>
+
+  <text class="t fold" x="428" y="82" font-weight="700">New</text>
+  <text class="t tab"   x="486" y="82">Templates</text>
+  <text class="t tabon" x="562" y="82">Personal</text>
+  <rect x="560" y="88" width="52" height="2.5" rx="1.25" fill="#c43e1c"/>
+  <line x1="410" y1="100" x2="696" y2="100" stroke="#e3e3df"/>
+
+  <!-- template card -->
+  <rect x="428" y="116" width="86" height="58" rx="5" fill="#fdf0ec" stroke="#c43e1c"/>
+  <rect x="438" y="126" width="40" height="7" rx="3" fill="#c43e1c" opacity="0.7"/>
+  <rect x="438" y="139" width="66" height="4" rx="2" fill="#e2c4b6"/>
+  <rect x="438" y="148" width="66" height="4" rx="2" fill="#e2c4b6"/>
+  <rect x="438" y="157" width="48" height="4" rx="2" fill="#e2c4b6"/>
+  <text class="t tiny" x="471" y="188" text-anchor="middle" fill="#c43e1c" font-weight="700">MyBrand</text>
+
+  <text class="t tiny" x="536" y="132">Your template appears</text>
+  <text class="t tiny" x="536" y="148">here — click it to start</text>
+  <text class="t tiny" x="536" y="164">a new presentation.</text>
+
+  <text class="t tiny" x="428" y="216" font-size="10.5">Saved anywhere else, this gallery stays empty.</text>
+  <text class="t tiny" x="428" y="232" font-size="10.5">A .pptx file will never show up here either.</text>
+
+  <!-- warning -->
+  <rect x="24" y="262" width="672" height="42" rx="8" fill="#fffaf6" stroke="#f0d5c6"/>
+  <circle cx="50" cy="283" r="10" fill="none" stroke="#c43e1c" stroke-width="1.8"/>
+  <text class="t" x="50" y="288" text-anchor="middle" font-size="13" font-weight="700" fill="#c43e1c">!</text>
+  <text class="t warn" x="74" y="288">Wrong folder or wrong file type: the template exists, but PowerPoint never offers it.</text>
+</svg>

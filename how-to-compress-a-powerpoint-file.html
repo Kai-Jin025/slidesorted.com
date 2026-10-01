@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>How to Compress a PowerPoint File (Without Ruining the Images)</title>
+<meta name="description" content="Find out what is actually making your PowerPoint file large, then compress embedded video with File → Info → Compress Media and shrink images with Compress Pictures. Includes why cropping an image does not reduce file size.">
+<link rel="canonical" href="https://slidesorted.com/how-to-compress-a-powerpoint-file">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Compress a PowerPoint File">
+<meta property="og:description" content="Diagnose what is bloating the file, compress video and images, and understand why cropping does not help.">
+<meta property="og:url" content="https://slidesorted.com/how-to-compress-a-powerpoint-file">
+<meta property="og:site_name" content="SlideSorted">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://slidesorted.com/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PowerPoint guides and tools">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "PowerPoint Guides", "item": "https://slidesorted.com/" },
+        { "@type": "ListItem", "position": 2, "name": "How to Compress a PowerPoint File", "item": "https://slidesorted.com/how-to-compress-a-powerpoint-file" }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Compress a PowerPoint File",
+      "description": "Reduce the size of a PowerPoint presentation by compressing embedded video and images and removing unused content.",
+      "totalTime": "PT15M",
+      "tool": [{ "@type": "HowToTool", "name": "Microsoft PowerPoint (desktop app)" }],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Find out what is actually making it large",
+          "text": "Check File, then Info, which reports the media size, or copy the .pptx, rename the copy to .zip and open it to see the ppt/media folder. Video and images are almost always the cause."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Compress embedded video",
+          "text": "Use File, then Info, then Compress Media, and choose a quality preset: Full HD 1080p, HD 720p, or Standard 480p. This re-encodes embedded video at a smaller size. Compress Media is available in PowerPoint for Windows only — PowerPoint for Mac has no equivalent feature, so video has to be compressed externally before it is inserted."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Compress the images",
+          "text": "Select a picture, then use Picture Format, then Compress Pictures. Untick Apply only to this picture so the setting covers the whole file, choose a lower resolution, and tick Delete cropped areas of pictures."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Delete the cropped areas — the part most people miss",
+          "text": "Cropping an image hides pixels but keeps them in the file. The Delete cropped areas of pictures checkbox in Compress Pictures is what actually removes them."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Remove unused slide masters and layouts",
+          "text": "In View, then Slide Master, right-click any master or layout that no slides use and delete it. Stock templates ship with a dozen layouts and multiple masters."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Drop embedded fonts you do not need",
+          "text": "Check File, then Options, then Save. If Embed fonts in the file is ticked, untick it unless the deck relies on a font other people may not have."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Save as a new file",
+          "text": "Use File, then Save As, and save under a new name. A fresh save discards accumulated editing history that an incrementally saved file carries."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my PowerPoint file so large?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost always embedded video, followed by high-resolution images. Video inserted from your device is stored inside the file at full quality. Other causes include cropped images that still carry their hidden pixels, embedded Excel workbooks, and embedded fonts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does cropping an image reduce the PowerPoint file size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Cropping only hides the pixels outside the visible frame — the full original image is still stored in the file. To actually remove them, tick Delete cropped areas of pictures in Picture Format, then Compress Pictures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does compressing a PowerPoint file reduce the image quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can, and permanently, because Compress Pictures re-encodes the images stored in the file. Undo does not restore the original quality, so keep a copy of the uncompressed version if you might need it. 150 ppi is usually indistinguishable on a projector."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Compress Media greyed out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the presentation contains no embedded video. Compress Media only affects video stored inside the file. Videos added as online links are not stored locally, so there is nothing for it to compress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a size limit for emailing a PowerPoint file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most email providers cap attachments at 20 to 25 MB. Beyond that, share a link instead — upload to OneDrive, Google Drive or Dropbox and send the link. That avoids compressing the deck at all and is faster than fighting the size limit."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="site__inner">
+    <a class="brand" href="/">Slide<span>Sorted</span></a>
+    <nav class="site-nav" aria-label="Guides">
+      <a href="/">Full guide</a>
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a>
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a>
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a>
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs wrap" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">PowerPoint Guides</a></li>
+    <li aria-current="page">How to Compress a PowerPoint File</li>
+  </ol>
+</nav>
+
+<main id="main">
+
+  <div class="wrap hero">
+    <span class="eyebrow">Fix it now</span>
+    <h1>How to Compress a PowerPoint File</h1>
+    <p class="byline">Updated <time datetime="2026-10-01">October 1, 2026</time> · 6 minute read · <a href="/about">How these guides are written</a></p>
+  </div>
+
+  <article class="wrap">
+    <div class="answer">
+      <p>
+        <strong>To compress a PowerPoint file:</strong> use
+        <strong>File → Info → Compress Media</strong> to shrink embedded video (Windows only — Mac
+        has no equivalent), and
+        <strong>Picture Format → Compress Pictures</strong> to shrink images. In the Compress
+        Pictures dialog, untick <em>Apply only to this picture</em> so it covers the whole deck, and
+        tick <strong>Delete cropped areas of pictures</strong> — that checkbox is the one people
+        miss.
+      </p>
+    </div>
+
+    <p>
+      Before compressing anything, find out what is actually making the file big. Compressing
+      images in a deck whose size comes from video will save you almost nothing, and vice versa.
+      This takes one minute and saves guessing.
+    </p>
+
+    <section>
+      <h2>Step by step</h2>
+      <ol class="steps">
+        <li>
+          <h3>Find out what is actually making it large</h3>
+          <p>
+            <strong>File → Info</strong> shows a <strong>Media Size</strong> figure if the deck
+            contains audio or video. If that number is most of your file size, video is your
+            problem and images are irrelevant.
+          </p>
+          <p>
+            For a full breakdown, use the fact that a <code>.pptx</code> is really a zip archive.
+            Copy the file, rename the copy to end in <code>.zip</code>, and open it. Everything
+            lives in a <code>ppt/media/</code> folder, sorted by size. That folder is almost always
+            the entire story.
+          </p>
+          <p>
+            If you would rather not rename anything,
+            <a href="/powerpoint-file-size-checker">the file size checker</a> does the same
+            inspection without touching the file — it reads the archive in your browser and lists
+            what is inside, largest first. Knowing which of the causes below applies is the
+            difference between a fix that works and an afternoon spent compressing the wrong thing.
+          </p>
+          <p class="tip">
+            <strong>Do this on a copy.</strong> Renaming the original to .zip is harmless, but you
+            will want the .pptx openable while you investigate.
+          </p>
+        </li>
+
+        <li>
+          <h3>Compress embedded video</h3>
+          <p>
+            Go to <strong>File → Info → Compress Media</strong> and pick a quality preset:
+          </p>
+          <p>
+            <strong>Full HD (1080p)</strong> — barely smaller, keeps quality.<br>
+            <strong>HD (720p)</strong> — the usual sweet spot. Roughly half the size of 1080p and
+            still sharp on most projectors.<br>
+            <strong>Standard (480p)</strong> — dramatically smaller, visibly softer on a big screen.
+          </p>
+          <p>
+            This re-encodes the video stored inside the file. It is permanent — there is no undo, so
+            keep the original if you might need the quality back.
+          </p>
+          <p>
+            Compression also strips any <strong>embedded subtitles and alternate audio tracks</strong>
+            from the video. If the deck has captions burned in as a separate track, they will be gone
+            afterwards and the video will no longer be accessible to anyone relying on them. Check
+            before you compress, and keep the original if it matters.
+          </p>
+          <p class="tip">
+            <strong>Compress Media is a Windows feature.</strong> PowerPoint for Mac does not have
+            it — there is no equivalent menu, and File → Info on Mac shows no Media Size figure
+            either. On a Mac, video has to be compressed <em>before</em> you insert it, using an
+            external tool, and then embedded as a normal file. Compress Pictures, below, does exist
+            on both platforms.
+          </p>
+        </li>
+
+        <li>
+          <h3>Compress the images</h3>
+          <p>
+            Select any picture on a slide, then go to
+            <strong>Picture Format → Compress Pictures</strong>.
+          </p>
+          <p>
+            Two controls in that dialog matter:
+          </p>
+          <p>
+            <strong>Apply only to this picture</strong> — <em>untick this</em>. Left ticked, the
+            setting applies to the one image you selected, which is why people compress and see no
+            change.<br>
+            <strong>Delete cropped areas of pictures</strong> — <em>tick this</em>. See the next
+            section, because it is the single highest-value checkbox in the dialog.
+          </p>
+          <p>
+            For output resolution, <strong>150 ppi</strong> is usually indistinguishable on a
+            projector and much smaller than the default 220 ppi. Use 96 ppi only if the deck will
+            never be shown on a large screen.
+          </p>
+        </li>
+
+        <li>
+          <h3>Delete the cropped areas — the part most people miss</h3>
+          <p>
+            Cropping an image in PowerPoint <em>hides</em> the pixels outside the frame. It does not
+            <em>delete</em> them. A photo you cropped to a tenth of its width is still stored in the
+            file at full size.
+          </p>
+          <p>
+            This is why decks assembled from photos stay enormous no matter how much you crop. The
+            <strong>Delete cropped areas of pictures</strong> checkbox in Compress Pictures is what
+            actually discards them.
+          </p>
+          <p class="tip">
+            <strong>It is destructive.</strong> Once the cropped areas are deleted, you cannot
+            un-crop back to the original framing. Do this near the end, once your layouts are final.
+          </p>
+        </li>
+
+        <li>
+          <h3>Remove unused slide masters and layouts</h3>
+          <p>
+            Go to <strong>View → Slide Master</strong>. A deck that has been through several hands
+            often carries multiple masters and a dozen layouts, all of which are stored in the file.
+          </p>
+          <p>
+            Select the layout in the thumbnail pane, then on the <strong>Slide Master</strong> tab
+            click <strong>Delete</strong>. This usually saves
+            less than video or images, but on a heavily-reworked deck it can be surprising — and it
+            makes the <strong>New Slide</strong> gallery usable again. PowerPoint will also offer to
+            do it for you: open a deck carrying 25 or more masters with some of them unused, and it
+            asks whether to remove the unused ones.
+          </p>
+        </li>
+
+        <li>
+          <h3>Drop embedded fonts you do not need</h3>
+          <p>
+            <strong>File → Options → Save</strong>, and look at
+            <strong>Embed fonts in the file</strong>. If it is ticked, PowerPoint is storing entire
+            font files inside your presentation — often several megabytes each.
+          </p>
+          <p>
+            Untick it unless the deck genuinely depends on a font your audience may not have. If you
+            do need it, choose <em>Embed only the characters used</em> rather than the full font.
+          </p>
+        </li>
+
+        <li>
+          <h3>Save as a new file</h3>
+          <p>
+            Use <strong>File → Save As</strong> and save under a new name rather than overwriting, so
+            you still have the original to fall back on. The leftover data itself is a separate
+            setting: <strong>File → Options → Advanced → Discard editing data</strong> throws away what
+            PowerPoint stores so it can restore an image to its original state after you have edited
+            it. That is the lever Microsoft documents by name for this, and on a deck with a lot of
+            retouched pictures it is worth more than the save itself.
+          </p>
+          <p class="tip">
+            <strong>Also check the format.</strong> If the file is somehow still a legacy
+            <code>.ppt</code>, saving as <code>.pptx</code> alone can cut the size substantially —
+            the old binary format is far less efficient.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <figure>
+      <img src="images/compress-what-bloats.svg"
+           alt="What makes a PowerPoint file large, in order: embedded video, high-resolution images, cropped areas that were never deleted, embedded Excel workbooks and embedded fonts — with the tool that fixes each one"
+           width="720" height="376" loading="lazy" decoding="async">
+      <figcaption>
+        <b>Diagnose before you compress.</b> Each cause has its own tool, and using the wrong one
+        saves you nothing.
+      </figcaption>
+    </figure>
+
+    <section id="troubleshooting">
+      <h2>When it does not work</h2>
+
+      <ul class="issues">
+        <li>
+          <strong>Compress Media is greyed out</strong>
+          The presentation has no embedded video, so there is nothing for it to act on. Videos added
+          as <a href="/how-to-insert-a-video-in-powerpoint">online links</a> are not stored
+          locally. Your size problem is somewhere else — most likely images.
+        </li>
+        <li>
+          <strong>The file is still enormous after compressing everything</strong>
+          Check for embedded Excel workbooks: a chart pasted as an embedded object carries a copy of
+          the whole spreadsheet inside the deck. See
+          <a href="/how-to-embed-an-excel-chart-in-powerpoint">how to embed an Excel chart</a>
+          for the options that keep the file small. Embedded fonts are the other usual culprit.
+        </li>
+        <li>
+          <strong>Compress Pictures seems to do nothing</strong>
+          You almost certainly left <em>Apply only to this picture</em> ticked, so it compressed the
+          single image you had selected and nothing else. Untick it and run it again.
+        </li>
+        <li>
+          <strong>The images look soft or blocky afterwards</strong>
+          You went too low, or you compressed twice. Re-insert the affected images from the
+          originals and compress once at 150 ppi. Compression is permanent once you save, so working from a
+          backup copy is the reliable route.
+        </li>
+        <li>
+          <strong>I cannot get it below the size I need</strong>
+          If the deck contains several minutes of embedded video, there is a floor you cannot
+          compress past without visibly wrecking it. At that point, share a link instead of an
+          attachment — upload to OneDrive, Google Drive or Dropbox and send the URL. That is faster
+          and loses nothing.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>Why is my PowerPoint file so large?</dt>
+        <dd>
+          Embedded video first, high-resolution images second. Beyond those: cropped images still
+          carrying their hidden pixels, embedded Excel workbooks, and embedded fonts. The
+          <code>ppt/media/</code> folder inside the file tells you which in about a minute.
+        </dd>
+
+        <dt>Does cropping an image reduce the PowerPoint file size?</dt>
+        <dd>
+          No. Cropping only hides the pixels outside the visible frame — the originals stay in the
+          file. Tick <strong>Delete cropped areas of pictures</strong> in Compress Pictures to
+          actually remove them.
+        </dd>
+
+        <dt>Does compressing a PowerPoint file reduce the image quality?</dt>
+        <dd>
+          It can, and the change is permanent because the images are re-encoded inside the file.
+          Keep a copy of the uncompressed version if you might need the quality later. 150 ppi is
+          normally indistinguishable on a projector.
+        </dd>
+
+        <dt>Why is Compress Media greyed out?</dt>
+        <dd>
+          There is no embedded video in the file. Compress Media only affects video stored inside
+          the presentation. Online-linked videos live on YouTube's servers, so there is nothing
+          local to compress.
+        </dd>
+
+        <dt>Is there a size limit for emailing a PowerPoint file?</dt>
+        <dd>
+          Most providers cap attachments somewhere between 20 and 25 MB. Past that, send a link
+          instead — upload the deck to OneDrive, Google Drive or Dropbox. It is faster than
+          compressing, and it preserves the original quality.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="sources">
+      <h2>Official references</h2>
+      <ul>
+        <li>
+          <a href="https://support.microsoft.com/en-us/powerpoint/compress-your-media-files" rel="noopener">Compress your media files</a>
+          <span>The Compress Media presets, what each one does to quality, and Microsoft's own statement that the feature is available in PowerPoint for Windows but not on Mac or the web.</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/powerpoint/reduce-the-file-size-of-your-powerpoint-presentations" rel="noopener">Reduce the file size of your PowerPoint presentations</a>
+          <span>Microsoft's official guidance on each size lever, including embedded fonts and discarding image editing data.</span>
+        </li>
+        <li>
+          <a href="https://support.microsoft.com/en-us/office/graphics-visuals/reduce-the-file-size-of-a-picture-in-microsoft-office" rel="noopener">Reduce the file size of a picture in Microsoft Office</a>
+          <span>Compress Pictures, the resolution targets, and discarding cropped areas.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Related guides</h2>
+      <div class="related">
+        <a href="/powerpoint-file-size-checker">
+          <span class="related__label">Tool</span>
+          <span class="related__title">PowerPoint File Size Checker</span>
+          <span class="related__desc">Drop a .pptx and see which files inside it are taking up the space, before you decide what to compress.</span>
+        </a>
+        <a href="/how-to-insert-a-video-in-powerpoint">
+          <span class="related__label">Cause</span>
+          <span class="related__title">How to Insert a Video in PowerPoint</span>
+          <span class="related__desc">Embedded video is usually what makes a deck huge. Here is how the sources differ.</span>
+        </a>
+        <a href="/how-to-embed-an-excel-chart-in-powerpoint">
+          <span class="related__label">Cause</span>
+          <span class="related__title">How to Embed an Excel Chart in PowerPoint</span>
+          <span class="related__desc">Embedded workbooks carry a whole spreadsheet inside the deck.</span>
+        </a>
+        <a href="/how-to-make-a-powerpoint-template">
+          <span class="related__label">Prevention</span>
+          <span class="related__title">How to Make a PowerPoint Template</span>
+          <span class="related__desc">Start clean next time and never inherit months of accumulated bloat.</span>
+        </a>
+      </div>
+    </section>
+  </article>
+
+  <div class="wrap">
+    <div class="cta">
+      <h2>Keep the original</h2>
+      <p>
+        Every step here is destructive and none of it is reversible. Work on a copy, and if the
+        deck will ever be shown on a large screen, archive the uncompressed version before you
+        start.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      <a href="/">How to Use PowerPoint</a> ·
+      <a href="/how-to-add-speaker-notes-in-powerpoint">Speaker notes</a> ·
+      <a href="/how-to-insert-a-video-in-powerpoint">Insert a video</a> ·
+      <a href="/how-to-add-animation-in-powerpoint">Animation</a> ·
+      <a href="/how-to-add-transitions-in-powerpoint">Transitions</a>
+    </p>
+    <p>
+      <a href="/how-to-use-slide-master-in-powerpoint">Slide Master</a> ·
+      <a href="/how-to-embed-an-excel-chart-in-powerpoint">Embed an Excel chart</a> ·
+      <a href="/how-to-make-a-powerpoint-template">Make a template</a>
+    </p>
+    <p>
+      <a href="/how-to-compress-a-powerpoint-file">Compress a file</a> ·
+      <a href="/powerpoint-file-size-checker">File size checker</a> ·
+      <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
+      <a href="/about">About</a>
+    </p>
+    <p>Last updated October 1, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+  </div>
+</footer>
+
+</body>
+</html>

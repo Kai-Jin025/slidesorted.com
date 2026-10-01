@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Development-only files. Most are excluded from the Git deploy entirely; these
+# rules cover the direct-upload route, where they would otherwise sit on the
+# live host and burn crawl budget.
+Disallow: /tests/
+Disallow: /check-site.py
+Disallow: /replace-placeholders.sh
+Disallow: /README.md
+
+Sitemap: https://slidesorted.com/sitemap.xml
