@@ -24,6 +24,9 @@ suppress it, because the automatic redirect happens before `_redirects` is consu
   is a self-inflicted "Page with redirect" in Search Console.
 - The hub is `index.html`, served at `/`.
 - `_redirects` retires the pre-launch `/powerpoint-guide.html` path.
+- `404.html` is what Cloudflare serves for anything else. Without it, this Pages project
+  answers an unmatched path with `/index.html` and a **200**, so every typo is a soft 404
+  holding a duplicate of the hub. Do not delete it.
 
 To add a page: name the file `<slug>.html`, link to it as `/<slug>`, and set its canonical to
 `https://<domain>/<slug>` — no trailing slash. Add it to `sitemap.xml`, then run
@@ -191,6 +194,7 @@ If you change what a guide claims, check whether the citation still supports it.
 | --- | --- |
 | `index.html` | Hub, served at `/`. "How to Use PowerPoint: The Complete Beginner's Guide" — 8 steps, common mistakes, tutorial path, FAQ |
 | `about.html` | Who writes these guides and how they are checked |
+| `404.html` | Served for any URL matching no file. `noindex`, and deliberately absent from `sitemap.xml` |
 | `powerpoint-file-size-checker.html` | The tool. Drag a `.pptx`, see what is inside it |
 | `how-to-add-speaker-notes-in-powerpoint.html` | Long-tail |
 | `how-to-insert-a-video-in-powerpoint.html` | Long-tail |

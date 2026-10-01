@@ -256,13 +256,22 @@ for s in svgs:
     print(f"  {os.path.basename(s):38s} {os.path.getsize(s):>6d} B  {n} text nodes")
 
 pages = sorted(glob.glob("*.html"))
+
+# 404.html is infrastructure, not editorial. Cloudflare serves it for any path that
+# matches no file. It gets the structural checks — tag balance, one H1, dead links,
+# the stylesheet — but not the ones that assume a page is meant to rank: it is
+# noindex, deliberately absent from the sitemap, and has no byline or citation.
+UTILITY = {"404.html"}
+content_pages = [p for p in pages if p not in UTILITY]
+
 print(f"\n=== HTML ({len(pages)}) ===")
 meta = {}
 all_canon = []
 for p in pages:
     name, types, canon = html_check(p, pages)
     meta[name] = (types, canon)
-    all_canon.append(canon)
+    if p in content_pages:
+        all_canon.append(canon)
     print(f"  {name:52s} {os.path.getsize(p):>6d} B  {types}")
 
 # --- unique titles / descriptions / canonicals
@@ -373,9 +382,9 @@ if missing:
     fail(f"referenced but absent: {missing}")
 
 # every page reachable from every other page (footer grid)
-for p in pages:
+for p in content_pages:
     t = open(p, encoding="utf-8").read()
-    for q in pages:
+    for q in content_pages:
         if q == p:
             continue
         if f'href="{clean_path(q)}"' not in t:
@@ -394,6 +403,10 @@ for p in pages:
     for m in sorted(set(re.findall(r"\[\[[^\]]+\]\]", t))):
         fail(f"{p}: unresolved placeholder {m}")
 
+# The trust requirements are for pages a reader arrives at on purpose. A 404 page
+# argues nothing, so it has no citation to carry.
+for p in content_pages:
+    t = open(p, encoding="utf-8").read()
     if p != "about.html":
         if 'href="/about"' not in t:
             fail(f"{p}: no link to /about (author/expertise signal)")
