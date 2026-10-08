@@ -121,6 +121,14 @@
         },
         {
           "@type": "Question",
+          "name": "Why is Compress Pictures greyed out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually because no picture is selected. Compress Pictures is on the Picture Format tab, which only appears once a picture on a slide is selected. On a Mac this catches people out, because there is no menu entry visible beforehand. Selecting a shape, a text box or a group will not bring the tab up, and neither will selecting a placeholder rather than the picture itself."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Is there a size limit for emailing a PowerPoint file?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -162,7 +170,7 @@
   <div class="wrap hero">
     <span class="eyebrow">Fix it now</span>
     <h1>How to Compress a PowerPoint File</h1>
-    <p class="byline">Updated <time datetime="2026-10-01">October 1, 2026</time> · 6 minute read · <a href="/about">How these guides are written</a></p>
+    <p class="byline">Updated <time datetime="2026-10-08">October 8, 2026</time> · 6 minute read · <a href="/about">How these guides are written</a></p>
   </div>
 
   <article class="wrap">
@@ -247,7 +255,10 @@
           <h3>Compress the images</h3>
           <p>
             Select any picture on a slide, then go to
-            <strong>Picture Format → Compress Pictures</strong>.
+            <strong>Picture Format → Compress Pictures</strong>. Selecting it first is not
+            optional: <strong>Picture Format</strong> is a contextual tab that only appears once
+            something on the slide is selected, so the command looks missing until you click an
+            image. On a Mac there is no other route to it.
           </p>
           <p>
             Two controls in that dialog matter:
@@ -360,6 +371,14 @@
           for the options that keep the file small. Embedded fonts are the other usual culprit.
         </li>
         <li>
+          <strong>Compress Pictures is greyed out or you cannot find it</strong>
+          Nothing is selected. The command lives on the <strong>Picture Format</strong> tab, and
+          that tab only appears once a picture on a slide is selected — on a Mac this catches
+          people constantly, because there is no visible menu entry to hunt for beforehand. Click
+          the image itself, then look again. Selecting a shape, a text box or a group will not
+          bring the tab up; it has to be an actual picture.
+        </li>
+        <li>
           <strong>Compress Pictures seems to do nothing</strong>
           You almost certainly left <em>Apply only to this picture</em> ticked, so it compressed the
           single image you had selected and nothing else. Untick it and run it again.
@@ -409,6 +428,16 @@
           There is no embedded video in the file. Compress Media only affects video stored inside
           the presentation. Online-linked videos live on YouTube's servers, so there is nothing
           local to compress.
+        </dd>
+
+        <dt>Why is Compress Pictures greyed out?</dt>
+        <dd>
+          Usually because no picture is selected. Compress Pictures sits on the
+          <strong>Picture Format</strong> tab, which only appears once a picture on a slide is
+          selected. On a Mac this catches people out because there is no menu entry visible
+          beforehand — you have to click the image first, then look. Selecting a shape, a text box
+          or a group will not bring the tab up, and neither will selecting a picture's placeholder
+          rather than the picture itself.
         </dd>
 
         <dt>Is there a size limit for emailing a PowerPoint file?</dt>
@@ -498,7 +527,7 @@
       <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
       <a href="/about">About</a>
     </p>
-    <p>Last updated October 1, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+    <p>Last updated October 8, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
   </div>
 </footer>
 
