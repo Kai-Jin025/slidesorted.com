@@ -103,6 +103,14 @@
         },
         {
           "@type": "Question",
+          "name": "Can I apply a transition to objects on the same slide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Transitions run between one slide and the next, never inside a single slide. Effects that happen to objects while the slide stays on screen — a shape moving, a line of text fading in — are animations, stored on the objects themselves. The closest a transition comes is Morph, which animates objects as the show moves from one slide to the next, but it still needs two slides to work. For movement within a single slide, see the animation guide."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "How do I remove a transition from every slide at once?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -168,7 +176,7 @@
   <div class="wrap hero">
     <span class="eyebrow">Slide effects</span>
     <h1>How to Add Transitions in PowerPoint</h1>
-    <p class="byline">Updated <time datetime="2026-10-01">October 1, 2026</time> · 7 minute read · <a href="/about">How these guides are written</a></p>
+    <p class="byline">Updated <time datetime="2026-10-17">October 17, 2026</time> · 7 minute read · <a href="/about">How these guides are written</a></p>
   </div>
 
   <article class="wrap">
@@ -458,6 +466,15 @@
           slide 1, so there is no entry to animate.
         </li>
         <li>
+          <strong>The effect you want is inside one slide, not between slides.</strong>
+          Transitions only play at the boundary between two slides. Making something appear,
+          move or fade while the slide itself stays on screen — text boxes arriving one at a
+          time, a picture flying in — is an animation, set on the <strong>Animations</strong>
+          tab rather than <strong>Transitions</strong>.
+          <a href="/how-to-add-animation-in-powerpoint">How to add animation in PowerPoint</a>
+          covers it.
+        </li>
+        <li>
           <strong>No transitions play anywhere.</strong> Check
           <strong>Slide Show → Set Up Slide Show</strong> and make sure <em>Show without
           animation</em> is unticked. That box is there for presenting a deck without any effects,
@@ -497,6 +514,17 @@
           directly on slide 1. You never enter it, so there is nothing to animate. A transition
           set on slide 1 only plays if you later navigate back to it from another slide — which
           makes the behaviour look intermittent rather than absent.
+        </dd>
+
+        <dt>Can I apply a transition to objects on the same slide?</dt>
+        <dd>
+          No. Transitions run between one slide and the next, never inside a single slide.
+          Effects that happen to objects while the slide stays on screen — a shape moving, a
+          line of text fading in — are animations, stored on the objects themselves. The
+          closest a transition comes is <strong>Morph</strong>, which animates objects as the
+          show moves from one slide to the next, but it still needs two slides to work. For
+          movement within a single slide, start with
+          <a href="/how-to-add-animation-in-powerpoint">how to add animation in PowerPoint</a>.
         </dd>
 
         <dt>How do I remove a transition from every slide at once?</dt>
@@ -615,7 +643,7 @@
       <a href="/how-to-recover-an-unsaved-powerpoint">Recover unsaved work</a> ·
       <a href="/about">About</a>
     </p>
-    <p>Last updated October 1, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+    <p>Last updated October 17, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
   </div>
 </footer>
 
