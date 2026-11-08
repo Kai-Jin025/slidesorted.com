@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" role="img">
+  <title>The Print screen with the layout dropdown open and Notes Pages selected, next to a preview of the printed page</title>
+  <defs>
+    <style>
+      .t   { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .lbl { font-size: 11px; fill: #5c5c5c; }
+      .cap { font-size: 9px; fill: #5c5c5c; }
+      .item { font-size: 11.5px; fill: #5c5c5c; }
+      .bar { fill: #eceae6; }
+      .note { font-size: 9px; fill: #3a3a36; }
+    </style>
+  </defs>
+
+  <rect width="720" height="440" fill="#ffffff"/>
+
+  <!-- left rail -->
+  <rect x="0" y="0" width="150" height="440" fill="#f2f2ef"/>
+  <text class="t item" x="28" y="40" fill="#c43e1c" font-weight="600">Print</text>
+  <text class="t item" x="28" y="76">Home</text>
+  <text class="t item" x="28" y="104">New</text>
+  <text class="t item" x="28" y="132">Open</text>
+  <line x1="24" y1="152" x2="126" y2="152" stroke="#dcdcd6"/>
+  <text class="t item" x="28" y="180">Share</text>
+  <text class="t item" x="28" y="208">Export</text>
+  <text class="t item" x="28" y="236">Close</text>
+
+  <!-- heading -->
+  <text class="t" x="176" y="46" font-size="18" fill="#3a3a36" font-weight="600">Print</text>
+
+  <!-- print button -->
+  <rect x="176" y="62" width="86" height="30" rx="3" fill="#c43e1c"/>
+  <text class="t" x="219" y="82" text-anchor="middle" font-size="11.5" fill="#ffffff" font-weight="600">Print</text>
+
+  <!-- copies -->
+  <text class="t lbl" x="176" y="118">Copies</text>
+  <rect x="176" y="126" width="86" height="26" rx="3" fill="#ffffff" stroke="#d8d8d2"/>
+  <text class="t cap" x="186" y="143">1</text>
+
+  <!-- printer -->
+  <text class="t lbl" x="176" y="182">Printer</text>
+  <rect x="176" y="190" width="256" height="28" rx="3" fill="#ffffff" stroke="#d8d8d2"/>
+  <text class="t cap" x="188" y="208">Microsoft Print to PDF</text>
+  <path d="M414 201 l5 5 l5 -5" stroke="#8a8a82" stroke-width="1.3" fill="none"/>
+
+  <!-- settings -->
+  <text class="t lbl" x="176" y="248">Settings</text>
+  <rect x="176" y="256" width="256" height="30" rx="3" fill="#ffffff" stroke="#c43e1c" stroke-width="1.3"/>
+  <text class="t cap" x="188" y="275" fill="#c43e1c" font-weight="600">Notes Pages</text>
+  <path d="M410 268 l5 5 l5 -5" stroke="#c43e1c" stroke-width="1.3" fill="none"/>
+
+  <!-- open dropdown, with the selected row highlighted -->
+  <rect x="176" y="288" width="256" height="128" fill="#e6e6e1"/>
+  <rect x="174" y="286" width="256" height="128" fill="#ffffff" stroke="#c9c9c2"/>
+  <rect x="174" y="318" width="256" height="32" fill="#fdf0ec"/>
+  <rect x="174" y="318" width="3" height="32" fill="#c43e1c"/>
+  <text class="t item" x="188" y="307" fill="#8a8a82">Full Page Slides</text>
+  <path d="M188 331 l3 3 l5 -6" stroke="#c43e1c" stroke-width="1.5" fill="none"/>
+  <text class="t item" x="202" y="339" fill="#c43e1c" font-weight="700">Notes Pages</text>
+  <text class="t item" x="188" y="371" fill="#5c5c5c">Outline</text>
+  <text class="t item" x="188" y="403" fill="#5c5c5c">Handouts</text>
+
+  <!-- callout to the highlighted row -->
+  <path d="M434 334 L450 334" stroke="#c43e1c" stroke-width="1.4" fill="none"/>
+  <path d="M446 330 L451 334 L446 338" stroke="#c43e1c" stroke-width="1.4" fill="none"/>
+  <text class="t cap" x="457" y="331" fill="#c43e1c" font-weight="700">this one</text>
+  <text class="t cap" x="457" y="343" fill="#c43e1c">not the default</text>
+
+  <!-- preview: one page, slide image on top, notes below -->
+  <text class="t lbl" x="530" y="46">Preview</text>
+  <rect x="530" y="58" width="168" height="280" fill="#f7f7f4" stroke="#e3e3df"/>
+
+  <rect x="546" y="78" width="136" height="176" fill="#ffffff" stroke="#dfdfd8"/>
+
+  <!-- slide image on the page -->
+  <rect x="556" y="88" width="116" height="64" fill="#fbfbf9" stroke="#e6e6e1"/>
+  <text class="t" x="564" y="104" font-size="8" fill="#3a3a36" font-weight="600">Three numbers</text>
+  <line x1="564" y1="109" x2="584" y2="109" stroke="#c43e1c" stroke-width="1.4"/>
+  <rect class="bar" x="564" y="120" width="56" height="3.5" rx="1.75"/>
+  <rect class="bar" x="564" y="128" width="44" height="3.5" rx="1.75"/>
+  <rect class="bar" x="564" y="136" width="60" height="3.5" rx="1.75"/>
+
+  <!-- notes text on the page -->
+  <text class="t note" x="556" y="170">3 numbers, then the ask.</text>
+  <text class="t note" x="556" y="182">Revenue up 42 percent —</text>
+  <text class="t note" x="556" y="194">say forty-two.</text>
+  <text class="t note" x="556" y="206">Pause here. Let this land.</text>
+  <text class="t note" x="556" y="218">Next: cost.</text>
+  <text class="t note" x="556" y="232" font-weight="700">ASK: pilot by February.</text>
+  <text class="t note" x="556" y="248" fill="#a8a8a0">2</text>
+
+  <text class="t cap" x="614" y="290" text-anchor="middle" fill="#8a8a82">Slide 2 of 3</text>
+</svg>

@@ -120,6 +120,30 @@
             "@type": "Answer",
             "text": "Zoom the notes pane, or change the default by going to View, then Notes Master, and adjusting the body text size there. Changes to the Notes Master apply to all slides."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the Notes pane and Notes Page view?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Notes pane is the narrow strip under the slide in Normal view, and it is where you type. Notes Page view shows one full page per slide with the slide on top and a large notes area below, and it is the layout that actually prints. Use the pane to write and Notes Page view to format and check the printed result."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should speaker notes be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Six lines or fewer per slide. A 20-minute talk is about 2,600 words spoken aloud, but its notes should be closer to 200: the opening sentence word for word, the numbers and names spelled out, and the transitions between slides."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I print only the notes, without the slide images?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not with the Notes Pages layout, which always includes a slide image above the text. To get notes on their own, use File, then Export, then Create Handouts, and send the notes below the slides to Word, where you can delete the slide images and print the text alone."
+          }
         }
       ]
     }
@@ -156,7 +180,7 @@
   <div class="wrap hero">
     <span class="eyebrow">Beginner guide</span>
     <h1>How to Add Speaker Notes in PowerPoint</h1>
-    <p class="byline">Updated <time datetime="2026-10-17">October 17, 2026</time> · 2 minute read · <a href="/about">How these guides are written</a></p>
+    <p class="byline">Updated <time datetime="2026-11-08">November 8, 2026</time> · 4 minute read · <a href="/about">How these guides are written</a></p>
   </div>
 
   <article class="wrap">
@@ -200,6 +224,15 @@
             Maximise the PowerPoint window and try again — see the
             <a href="#troubleshooting">troubleshooting section</a> below.
           </p>
+          <figure>
+            <img src="images/notes-view-tab.svg"
+                 alt="PowerPoint's View tab with the Notes button highlighted in the Show group, and the same Notes button visible on the status bar at the bottom of the window"
+                 width="720" height="222" loading="lazy" decoding="async">
+            <figcaption>
+              <b>Two ways in.</b> The Notes button sits in the Show group on the View tab, and the
+              status bar at the bottom of the window carries the same button.
+            </figcaption>
+          </figure>
         </li>
 
         <li>
@@ -213,6 +246,15 @@
             Write the way you speak, not the way you write. Full sentences are a trap: if you write
             prose, you will read it aloud, and reading aloud is the fastest way to lose a room.
           </p>
+          <figure>
+            <img src="images/notes-pane-open.svg"
+                 alt="PowerPoint in Normal view with a slide on the left and the Notes pane opened underneath it, showing the pale 'Click to add notes' placeholder above a drag handle"
+                 width="720" height="446" loading="lazy" decoding="async">
+            <figcaption>
+              <b>The pane is open.</b> The placeholder is where you type; drag the divider above it
+              upward when six lines of notes start to feel cramped.
+            </figcaption>
+          </figure>
         </li>
 
         <li>
@@ -226,6 +268,15 @@
             <strong>A format that works:</strong> one line for the point, one line for the example.
             If a slide needs more than six lines of notes, the slide is probably doing too much.
           </p>
+          <figure>
+            <img src="images/notes-formatted.svg"
+                 alt="The Notes pane filled with six short lines, with the number 42 and the final line set in bold so the parts that must not be forgotten stand out at a glance"
+                 width="720" height="470" loading="lazy" decoding="async">
+            <figcaption>
+              <b>Glanceable, not complete.</b> Short lines, one bold phrase each, and the ask in
+              bold at the bottom where your eye lands last.
+            </figcaption>
+          </figure>
         </li>
 
         <li>
@@ -250,22 +301,215 @@
               stay on your laptop.
             </figcaption>
           </figure>
+          <p class="tip">
+            <strong>No second screen?</strong> Press <span class="keys">Alt+F5</span> to run
+            Presenter View in a single window on your own laptop, so you can rehearse with the real
+            layout before you are standing in front of anyone.
+          </p>
+          <figure>
+            <img src="images/presenter-view-real.svg"
+                 alt="Presenter View on the presenter's own laptop: a running timer and control buttons across the top, the current slide above the speaker notes on the left, and a next-slide preview with slide thumbnails on the right"
+                 width="720" height="430" loading="lazy" decoding="async">
+            <figcaption>
+              <b>The real layout.</b> Notes sit directly under the slide you are showing, and the
+              next slide waits on the right so you are never surprised by it.
+            </figcaption>
+          </figure>
         </li>
 
         <li>
           <h3>Print or export the notes if you need a paper backup</h3>
           <p>
-            For a printed copy: <span class="keys">File → Print</span>, then change the layout
-            dropdown from <strong>Full Page Slides</strong> to <strong>Notes Pages</strong>. Each
-            page prints one slide plus its notes underneath.
+            <span class="keys">File → Print</span>, then change the layout dropdown from
+            <strong>Full Page Slides</strong> to <strong>Notes Pages</strong>. If you leave it on
+            the default, the notes are silently dropped from the printout.
           </p>
           <p>
-            For a PDF: <span class="keys">File → Export → Create PDF/XPS</span>, and select
-            <strong>Notes Pages</strong> in the options. If you leave it on Slides, the notes are
-            silently dropped.
+            <a href="#print">The printing section below</a> covers PDF export, why pages come out
+            blank, and how to get the notes out without the slide images.
           </p>
         </li>
       </ol>
+
+      <h3>On a Mac</h3>
+      <p>
+        PowerPoint for Mac uses the same <strong>View → Notes</strong> route, but two things are
+        different enough to catch people out.
+      </p>
+      <p>
+        There is no <strong>Notes</strong> button in the status bar — that button is Windows-only.
+        On a Mac the pane is toggled from the <strong>View</strong> tab alone, and the divider above
+        it can be dragged upward to give it more room.
+      </p>
+      <p>
+        Printing is under a different label: <span class="keys">File → Print</span> opens the macOS
+        print sheet, where the layout control is called <strong>Print What</strong> rather than a
+        Settings dropdown. Choose <strong>Notes Pages</strong> there.
+      </p>
+      <figure>
+        <img src="images/notes-mac-view.svg"
+             alt="PowerPoint for Mac: the View tab with Notes highlighted in the Show group, above a status bar that has no Notes button on it"
+             width="720" height="236" loading="lazy" decoding="async">
+        <figcaption>
+          <b>Mac has one route, not two.</b> The button on the View tab is there; the one on the
+          status bar is not.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Editing and formatting your notes</h2>
+      <p>
+        The notes pane behaves like a small text box rather than a plain field. Click inside it and
+        the <strong>Home</strong> tab works exactly as it does on a slide — font, size, bold,
+        colour and bullets all apply to whatever you have selected.
+      </p>
+      <p>
+        For anything more than a quick fix, switch to <strong>View → Notes Page</strong>. That view
+        shows one slide per page with the slide image on top and a full-size notes area underneath,
+        and it is the exact layout that prints. Formatting done there is what you will see on
+        paper, which makes it the better place to fix spacing than the narrow pane.
+      </p>
+      <figure>
+        <img src="images/notes-page-view.svg"
+             alt="Notes Page view showing one printable page, with the slide image at the top and the full speaker notes typed underneath it"
+             width="720" height="430" loading="lazy" decoding="async">
+        <figcaption>
+          <b>What prints.</b> One slide per page, slide image on top and the notes underneath — the
+          same page the printer will produce.
+        </figcaption>
+      </figure>
+      <p class="tip">
+        <strong>Change it once, not forty times.</strong> <strong>View → Notes Master</strong> sets
+        the default font, size and margins for every slide's notes at once. It is the notes
+        equivalent of the Slide Master, and it is where a page number or a confidentiality line
+        would go if you need one on every printed page.
+      </p>
+      <figure>
+        <img src="images/notes-master.svg"
+             alt="Notes Master view with the body text placeholder selected and surrounded by resize handles, next to a ribbon with Slide Image, Placeholders and Edit Theme groups and a Close Master View button"
+             width="720" height="450" loading="lazy" decoding="async">
+        <figcaption>
+          <b>Set it once.</b> Formatting the body text placeholder here changes the notes on every
+          slide in the file, not just this one.
+        </figcaption>
+      </figure>
+
+      <h3>Keyboard and deleting</h3>
+      <p>
+        There is no single-key shortcut for the notes pane. The keyboard route is
+        <span class="keys">Alt</span>, then <span class="keys">W</span>, then
+        <span class="keys">P</span>, then <span class="keys">N</span> — the View tab, then the
+        Notes button. Press them one after another, not together.
+      </p>
+      <p>
+        To delete a note, click into the pane, select all with <span class="keys">Ctrl+A</span> and
+        press <span class="keys">Delete</span>. Notes live inside the slide, so deleting the slide
+        deletes its notes with it, and there is no separate notes file to recover them from.
+      </p>
+    </section>
+
+    <section>
+      <h2>What to actually write in your notes</h2>
+      <p>
+        Most people use the notes pane as a second slide — they paste in the paragraph that did not
+        fit. That is the one thing notes are not for. Notes are a prompt sheet: they hold the
+        things you cannot see on the slide, not a transcript of the things you can.
+      </p>
+
+      <h3>The six-line rule</h3>
+      <p>
+        Keep each slide's notes to six lines or fewer, and treat that as a design constraint rather
+        than a suggestion. A slide that needs more than six lines is usually three slides.
+      </p>
+      <p>
+        For scale: at a normal speaking pace of about 130 words a minute, a 20-minute talk is
+        roughly 2,600 words out loud. The notes for it should be closer to 200. The gap between
+        those two numbers is what you are supposed to know, not what you are supposed to read.
+      </p>
+
+      <h3>What earns a line</h3>
+      <ul>
+        <li>
+          <strong>Your opening sentence, word for word.</strong> The first ten seconds are the one
+          part you cannot improvise, because you are still settling.
+        </li>
+        <li>
+          <strong>Numbers, names and dates, written out.</strong> "Forty-two percent" spelled out
+          stops you saying forty-two when you meant four point two.
+        </li>
+        <li>
+          <strong>The transition.</strong> The sentence that carries you from this slide to the
+          next is the one people drop when they are nervous.
+        </li>
+        <li>
+          <strong>The single thing you must not forget to say.</strong> Put it in bold. It is
+          usually the ask.
+        </li>
+      </ul>
+
+      <h3>What does not</h3>
+      <ul>
+        <li>
+          Full paragraphs. You will read them aloud, and reading aloud loses a room faster than
+          silence does.
+        </li>
+        <li>
+          A repeat of the slide text. If it is already on the screen, the audience got it first.
+        </li>
+        <li>
+          Anything you would have to stop and decode. If a note needs your full attention, it
+          belongs in rehearsal, not in the room.
+        </li>
+      </ul>
+
+      <h3>How to write them without rewriting the deck</h3>
+      <p>
+        Do it after the slides are finished, one slide at a time. Cover the notes pane, say that
+        slide out loud once, and write down only what you had to invent on the spot. That is the
+        part you will not remember on the day — and therefore the only part worth writing.
+      </p>
+    </section>
+
+    <section id="print">
+      <h2>Printing your notes</h2>
+      <p>
+        This is the part people get wrong, because PowerPoint's default print layout drops the notes
+        without warning. Go to <span class="keys">File → Print</span>, then open the second
+        dropdown — the one showing <strong>Full Page Slides</strong> — and choose
+        <strong>Notes Pages</strong>.
+      </p>
+      <figure>
+        <img src="images/notes-print-dialog.svg"
+             alt="The PowerPoint Print screen with the layout dropdown open, Notes Pages selected and ticked, beside a preview of a single page with the slide on top and its notes below"
+             width="720" height="440" loading="lazy" decoding="async">
+        <figcaption>
+          <b>Notes Pages is not the default.</b> Open the layout dropdown and pick it — the preview
+          on the right is exactly what the printer gets.
+        </figcaption>
+      </figure>
+      <p>
+        Notes Pages prints one slide per page with its notes underneath, using the formatting set
+        in the Notes Master. There is no "two slides per page" option for notes pages; to save
+        paper, print to PDF first and then send that PDF to the printer with two pages per sheet.
+      </p>
+
+      <h3>Exporting a PDF instead</h3>
+      <p>
+        <span class="keys">File → Export → Create PDF/XPS</span>, then <strong>Options</strong>,
+        then <strong>Notes Pages</strong>. Leave the default on Slides and the notes are left out
+        with nothing to warn you.
+      </p>
+      <p class="tip">
+        <strong>Pages coming out half blank?</strong> That slide has no notes. Check in
+        <strong>View → Notes Page</strong> before printing — that view shows exactly the empty
+        area you would get on paper.
+      </p>
+      <p>
+        If you need the text on its own, with no slide image on every page, use
+        <span class="keys">File → Export → Create Handouts</span> and send the notes below the
+        slides to Word, where the images can be deleted and the text printed by itself.
+      </p>
     </section>
 
     <section id="troubleshooting">
@@ -346,6 +590,30 @@
           Use the A− / A+ buttons in Presenter View for a quick change, or set a permanent default
           in <strong>View → Notes Master</strong>, which applies to every slide's notes at once.
         </dd>
+
+        <dt>What is the difference between the Notes pane and Notes Page view?</dt>
+        <dd>
+          The <strong>Notes pane</strong> is the narrow strip under the slide in Normal view, and
+          it is where you type. <strong>Notes Page view</strong> shows one full page per slide,
+          with the slide image on top and a large notes area below, and it is the layout that
+          actually prints. Write in the pane, format and check the print result in Notes Page view.
+        </dd>
+
+        <dt>How long should speaker notes be?</dt>
+        <dd>
+          Six lines or fewer per slide. A 20-minute talk is about 2,600 words spoken aloud, but its
+          notes should be closer to 200: the opening sentence word for word, the numbers and names
+          spelled out, and the transitions between slides. Anything longer gets read aloud, and
+          being read aloud is what makes an audience reach for their phone.
+        </dd>
+
+        <dt>Can I print only the notes, without the slide images?</dt>
+        <dd>
+          Not with the Notes Pages layout, which always puts a slide image above the text. To get
+          notes on their own, use <span class="keys">File → Export → Create Handouts</span> and
+          send the notes below the slides to Word, where the images can be deleted and the text
+          printed by itself.
+        </dd>
       </dl>
     </section>
 
@@ -382,11 +650,13 @@
 
   <div class="wrap">
     <div class="cta">
-      <h2>The point of notes</h2>
+      <h2>Before you press F5</h2>
       <p>
-        Notes exist so your slides do not have to carry your script. If you find yourself writing
-        paragraphs on the slide itself, move them into the notes pane and let the slide keep only
-        the headline.
+        Notes exist so your slides do not have to carry your script. Run the slideshow once on the
+        projector setup you will actually use — Presenter View, notes, next-slide preview — and not
+        just on your laptop screen. If the deck is slow to open in that test it is probably too
+        big: <a href="/powerpoint-file-size-checker">check its size in the browser</a>, and
+        <a href="/how-to-compress-a-powerpoint-file">compress it</a> before the room fills up.
       </p>
     </div>
   </div>
@@ -415,7 +685,7 @@
       <a href="/privacy">Privacy</a> ·
       <a href="/terms">Terms</a>
     </p>
-    <p>Last updated October 17, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
+    <p>Last updated November 8, 2026 · Menu names reflect PowerPoint 2024 and later.</p>
   </div>
 </footer>
 

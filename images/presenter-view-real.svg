@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" width="720" height="430" role="img">
+  <title>Presenter View on the presenter's own screen: current slide, the notes below it, and a preview of the next slide</title>
+  <defs>
+    <style>
+      .t   { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .lbl { font-size: 10px; fill: #8a8a82; letter-spacing: 0.06em; }
+      .cap { font-size: 9px; fill: #5c5c5c; }
+      .btn { fill: #f4f4f1; stroke: #e3e3df; }
+      .bar { fill: #eceae6; }
+      .note { font-size: 11.5px; fill: #3a3a36; }
+      .mono { font-family: "Consolas", "SF Mono", Menlo, monospace; font-size: 13px; fill: #3a3a36; }
+    </style>
+  </defs>
+
+  <rect width="720" height="430" fill="#f5f5f2"/>
+
+  <!-- top bar -->
+  <rect x="0" y="0" width="720" height="44" fill="#f2f2ef"/>
+  <line x1="0" y1="44" x2="720" y2="44" stroke="#e3e3df"/>
+  <text class="t mono" x="24" y="28">00:12:47</text>
+  <rect class="btn" x="120" y="12" width="22" height="20" rx="3"/>
+  <path d="M133 17 L127 22 L133 27" stroke="#8a8a82" stroke-width="1.4" fill="none"/>
+  <rect class="btn" x="148" y="12" width="22" height="20" rx="3"/>
+  <rect x="155" y="17" width="2.5" height="10" fill="#8a8a82"/>
+  <rect x="160.5" y="17" width="2.5" height="10" fill="#8a8a82"/>
+  <rect class="btn" x="176" y="12" width="22" height="20" rx="3"/>
+  <path d="M183 17 L189 22 L183 27" stroke="#8a8a82" stroke-width="1.4" fill="none"/>
+  <rect class="btn" x="204" y="12" width="22" height="20" rx="3"/>
+  <rect x="211" y="18" width="8" height="8" rx="1" fill="#8a8a82"/>
+  <text class="t cap" x="690" y="28" text-anchor="end">End Show</text>
+
+  <!-- current slide -->
+  <rect x="24" y="56" width="440" height="248" fill="#ffffff" stroke="#dfdfd8"/>
+  <text class="t" x="60" y="112" font-size="17" fill="#3a3a36" font-weight="600">Three numbers</text>
+  <line x1="60" y1="126" x2="124" y2="126" stroke="#c43e1c" stroke-width="3"/>
+  <circle cx="66" cy="154" r="3" fill="#c43e1c"/>
+  <rect class="bar" x="78" y="150" width="180" height="7" rx="3.5"/>
+  <circle cx="66" cy="182" r="3" fill="#c43e1c"/>
+  <rect class="bar" x="78" y="178" width="150" height="7" rx="3.5"/>
+  <circle cx="66" cy="210" r="3" fill="#c43e1c"/>
+  <rect class="bar" x="78" y="206" width="196" height="7" rx="3.5"/>
+
+  <!-- chart on the slide -->
+  <rect x="322" y="208" width="26" height="44" fill="#e6e6e1"/>
+  <rect x="354" y="182" width="26" height="70" fill="#e6e6e1"/>
+  <rect x="386" y="156" width="26" height="96" fill="#c43e1c"/>
+  <line x1="318" y1="254" x2="416" y2="254" stroke="#dfdfd8"/>
+  <text class="t cap" x="369" y="270" text-anchor="middle" fill="#a8a8a0">Q1 &#183; Q2 &#183; Q3</text>
+
+  <!-- notes -->
+  <text class="t lbl" x="24" y="328">NOTES</text>
+  <rect x="24" y="336" width="440" height="86" rx="4" fill="#ffffff" stroke="#e3e3df"/>
+  <text class="t note" x="38" y="356">3 numbers, then the ask.</text>
+  <text class="t note" x="38" y="372">Revenue up <tspan font-weight="700">42</tspan> percent — say forty-two.</text>
+  <text class="t note" x="38" y="388">Pause here. Let this one land.</text>
+  <text class="t note" x="38" y="404" font-weight="700">ASK: pilot by February.</text>
+
+  <!-- right column -->
+  <text class="t lbl" x="484" y="66">NEXT SLIDE</text>
+  <rect x="484" y="74" width="212" height="119" fill="#ffffff" stroke="#dfdfd8"/>
+  <text class="t" x="502" y="112" font-size="12" fill="#3a3a36" font-weight="600">Cost</text>
+  <line x1="502" y1="122" x2="540" y2="122" stroke="#c43e1c" stroke-width="2.5"/>
+  <rect class="bar" x="502" y="138" width="120" height="6" rx="3"/>
+  <rect class="bar" x="502" y="152" width="96" height="6" rx="3"/>
+
+  <text class="t lbl" x="484" y="222">SLIDES</text>
+  <rect class="btn" x="484" y="230" width="62" height="36" rx="2"/>
+  <rect class="btn" x="556" y="230" width="62" height="36" rx="2" stroke="#c43e1c" stroke-width="1.6" fill="#fdf0ec"/>
+  <rect class="btn" x="628" y="230" width="62" height="36" rx="2"/>
+  <rect class="btn" x="484" y="274" width="62" height="36" rx="2"/>
+  <rect class="btn" x="556" y="274" width="62" height="36" rx="2"/>
+  <rect class="btn" x="628" y="274" width="62" height="36" rx="2"/>
+</svg>
