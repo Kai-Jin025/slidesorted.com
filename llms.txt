@@ -1,0 +1,28 @@
+# SlideSorted
+
+> Free, plain-English PowerPoint guides. Every how-to opens with the exact click path, then covers the mistakes people make and the cases where the feature is the wrong tool.
+
+Independent site, not affiliated with Microsoft. Each guide is checked against the current desktop build of PowerPoint and states where the Mac version differs. No accounts, no signup, no advertising.
+
+## Guides
+
+- [How to Use PowerPoint: The Complete Beginner's Guide](https://slidesorted.com/): Eight steps from a blank deck to a finished presentation, plus a route through the site for each skill level.
+- [How to Add Animation in PowerPoint](https://slidesorted.com/how-to-add-animation-in-powerpoint): Select the object, open the Animations tab, pick an Entrance, Emphasis, Exit or Motion Path effect, then set Start to On Click, With Previous or After Previous.
+- [How to Add Speaker Notes in PowerPoint](https://slidesorted.com/how-to-add-speaker-notes-in-powerpoint): View → Notes opens the pane below the slide; type there, and read the notes in Presenter View. Notes are never visible to the audience.
+- [How to Add Transitions in PowerPoint](https://slidesorted.com/how-to-add-transitions-in-powerpoint): A transition belongs to the slide you arrive at, not the one you leave — the step most people get backwards. Includes Morph.
+- [How to Compress a PowerPoint File](https://slidesorted.com/how-to-compress-a-powerpoint-file): Compress Media shrinks embedded video (Windows only); Compress Pictures shrinks images. Find out which one is actually making the file big first.
+- [How to Embed an Excel Chart in PowerPoint](https://slidesorted.com/how-to-embed-an-excel-chart-in-powerpoint): Paste Special links, embeds, or pastes a picture of the chart — the choice decides whether the chart updates when the spreadsheet changes.
+- [How to Insert a Video in PowerPoint](https://slidesorted.com/how-to-insert-a-video-in-powerpoint): Three sources — this device, Microsoft's stock library, or an online link — and which one causes "my video won't play".
+- [How to Make a PowerPoint Template](https://slidesorted.com/how-to-make-a-powerpoint-template): Set slide size and theme, edit the Slide Master, then save as .potx into the Custom Office Templates folder.
+- [How to Recover an Unsaved PowerPoint Presentation](https://slidesorted.com/how-to-recover-an-unsaved-powerpoint): Steps ordered by how likely they are to work; step one is File → Info → Manage Presentation → Recover Unsaved Presentations.
+- [How to Use Slide Master in PowerPoint](https://slidesorted.com/how-to-use-slide-master-in-powerpoint): The parent master controls fonts, colours, backgrounds and logos on every slide at once; the layouts below it inherit.
+
+## Tools
+
+- [PowerPoint File Size Checker](https://slidesorted.com/powerpoint-file-size-checker): Drop a .pptx and see which files inside it are taking the space. Runs entirely in the browser — the file is never uploaded.
+
+## Optional
+
+- [About This Site](https://slidesorted.com/about): How these guides are researched and checked, and what the site refuses to do.
+- [Privacy Policy](https://slidesorted.com/privacy)
+- [Terms of Use](https://slidesorted.com/terms)
